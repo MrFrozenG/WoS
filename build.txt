@@ -1,0 +1,3 @@
+displayName = Whisper of Shadows [WoS]
+author = MrFrozen (HaxxorFox)
+version = 0.1
