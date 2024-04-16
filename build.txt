@@ -1,3 +1,5 @@
 displayName = Whisper of Shadows [WoS]
 author = MrFrozen (HaxxorFox)
-version = 0.1
+version = 0.0.1
+hideCode = false
+hideResources = false
