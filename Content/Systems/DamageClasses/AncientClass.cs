@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace WoS.Content.Systems.SysPlayers;
+namespace WoS.Content.Systems.DamageClasses;
 
 public class AncientClass : DamageClass
 {

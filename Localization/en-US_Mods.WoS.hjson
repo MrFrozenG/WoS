@@ -6,8 +6,84 @@ Items: {
 		Tooltip: ""
 	}
 
+	##Accessories other
 	RemembranceSigil: {
-		DisplayName: Remembrance Sigil
+		DisplayName: Remembrance sigil
+		Tooltip:
+			'''
+			Slightly increases your stats
+			'Why Moth?'
+			'''
+	}
+
+	##Accessories Magic
+	TungstenGoblet: {
+		DisplayName: Tungsten goblet
+		Tooltip:
+			'''
+			May the future be blessed with gold?
+			Increases your magical and summon abilities
+			'''
+	}
+
+	SilverGoblet: {
+		DisplayName: Silver goblet
+		Tooltip:
+			'''
+			May the future be blessed with gold?
+			Increases your magical and summon abilities
+			'''
+	}
+
+	GoldenGoblet: {
+		DisplayName: Golden goblet
+		Tooltip:
+			'''
+			May the future be blessed with gold?
+			Increases your magical and summon abilities
+			'''
+	}
+
+	PlatinumGoblet: {
+		DisplayName: Platinum goblet
+		Tooltip:
+			'''
+			May the future be blessed with gold?
+			Increases your magical and summon abilities
+			'''
+	}
+
+	##Accessories Summon
+	PactCrystal: {
+		DisplayName: Pact crystal
+		Tooltip: Increases your max number of minions by 1
+	}
+
+	##Accessories: Melee
+	Bloodgem: {
+		DisplayName: Bloodgem
+		Tooltip: Increases melee damage by 1
+	}
+
+	BloodgemRing: {
+		DisplayName: Bloodgem ring
+		Tooltip:
+			'''
+			5% Increased melee damage
+			5% Reduced other damage
+			10% Increased melee speed
+			'''
+	}
+
+	RoyalCthulhuShield: {
+		DisplayName: Royal Cthulhu Shield
+		Tooltip: ""
+	}
+
+	Bullethell: {
+		DisplayName: Bullethell
 		Tooltip: ""
 	}
 }
+
+DamageClasses.AncientClass.DisplayName: Ancient Class
