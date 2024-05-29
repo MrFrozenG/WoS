@@ -1,12 +1,23 @@
 # This file will automatically update with entries for new content after a build and reload
 
 Items: {
+	##Ammo
+	MoltenBullet: {
+		DisplayName: Molten bullet
+		Tooltip: Ignites on hit
+	}
+
+	FrostBullet: {
+		DisplayName: Frost bullet
+		Tooltip: ""
+	}
+
+	##Accessories
 	TurnToOblivion: {
 		DisplayName: Turn To Oblivion
 		Tooltip: ""
 	}
 
-	##Accessories other
 	RemembranceSigil: {
 		DisplayName: Remembrance sigil
 		Tooltip:
@@ -16,7 +27,6 @@ Items: {
 			'''
 	}
 
-	##Accessories Magic
 	TungstenGoblet: {
 		DisplayName: Tungsten goblet
 		Tooltip:
@@ -53,37 +63,85 @@ Items: {
 			'''
 	}
 
-	##Accessories Summon
-	PactCrystal: {
-		DisplayName: Pact crystal
-		Tooltip: Increases your max number of minions by 1
-	}
-
-	##Accessories: Melee
-	Bloodgem: {
-		DisplayName: Bloodgem
-		Tooltip: Increases melee damage by 1
-	}
-
-	BloodgemRing: {
-		DisplayName: Bloodgem ring
+	RoyalCthulhuShield: {
+		DisplayName: Royal cthulhu shield
 		Tooltip:
 			'''
-			5% Increased melee damage
-			5% Reduced other damage
-			10% Increased melee speed
+			Slimes become friendly
+			Allows the player to dash into the enemy
+			Double tap a direction
 			'''
 	}
 
-	RoyalCthulhuShield: {
-		DisplayName: Royal Cthulhu Shield
-		Tooltip: ""
-	}
-
+	##Weapons
 	Bullethell: {
 		DisplayName: Bullethell
+		Tooltip: 15% chance to save ammo
+	}
+
+	ShadowofAmaterasu: {
+		DisplayName: Shadow of Amaterasu
+		Tooltip:
+			'''
+			35% chance to save ammo
+			'The Newborn God'
+			'''
+	}
+
+	ShadowofBoreas: {
+		DisplayName: Shadow of Boreas
+		Tooltip:
+			'''
+			35% chance to save ammo
+			'The Newborn God'
+			'''
+	}
+
+	Code17Star: {
+		DisplayName: Code 17: Star
+		Tooltip:
+			'''
+			Feel the power from space!
+			Does not consume mana at night
+			'''
+	}
+
+	CosmicJuggernaut: {
+		DisplayName: Cosmic Juggernaut
+		Tooltip: Replenishes your mana on impact if it is less than half.
+	}
+
+	Sparks: {
+		DisplayName: Sparks
+		Tooltip:
+			'''
+			'Cause sparks light the flame
+			Turn the dark of the night into day!'
+			'''
+	}
+
+	##Projectiles
+	Sunshine: {
+		DisplayName: Sunshine
+		Tooltip: Releases concentrated sunlight to blind your enemies!
+	}
+
+	TrustYourHeart: {
+		DisplayName: Trust Your Heart
 		Tooltip: ""
 	}
 }
 
-DamageClasses.AncientClass.DisplayName: Ancient Class
+DamageClasses: {
+	AncientClass.DisplayName: Ancient Class
+	OtherworldClass.DisplayName: Otherworld damage
+}
+
+Projectiles: {
+	MoltenBulletShot.DisplayName: Molten bullet
+	FrostBulletShot.DisplayName: Frost bullet
+	CosmicEnergy.DisplayName: Cosmic energy
+	Sunlight.DisplayName: Sunlight
+	SunlightA.DisplayName: Sunlight (Sunshine)
+	TrustYourHeartY.DisplayName: Trust Your Heart Y
+}
