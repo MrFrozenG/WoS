@@ -119,16 +119,21 @@ Items: {
 			Turn the dark of the night into day!'
 			'''
 	}
+	TrustYourHeart: {
+		DisplayName: Trust your heart
+		Tooltip:
+		'''
+		Fires a projectile at the nearest enemy
+		So don't be afraid
+		Trust your heart, keep your head in the game
+		(Keep up, keep up, and never be afraid)
+		'''
+	}
 
 	##Projectiles
 	Sunshine: {
 		DisplayName: Sunshine
 		Tooltip: Releases concentrated sunlight to blind your enemies!
-	}
-
-	TrustYourHeart: {
-		DisplayName: Trust Your Heart
-		Tooltip: ""
 	}
 }
 
