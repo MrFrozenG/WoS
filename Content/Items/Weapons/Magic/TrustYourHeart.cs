@@ -90,7 +90,7 @@ public class TrustYourHeartY : ModProjectile
 		if (owner.channel && owner.statMana > 0)
 		{
 			manaCounter = ++manaCounter % 60;
-			if (manaCounter % (60 / 10) == 0)	owner.statMana--;
+			if (manaCounter % (60 / 5) == 0)	owner.statMana--;
 
 			if (owner.whoAmI == Main.myPlayer && /*owner.controlUseTile &&*/ Projectile.frameCounter <= 0)
 			{
@@ -99,7 +99,7 @@ public class TrustYourHeartY : ModProjectile
 				if (target != default)
 				{
 					CastMagic(Projectile.DirectionTo(target.Center) * 10);
-					Projectile.velocity = Projectile.DirectionFrom(target.Center) * 8;
+					Projectile.velocity = Projectile.DirectionFrom(target.Center) * 2;
 					Projectile.frameCounter = 20;
 					Projectile.netUpdate = true;
 				}
@@ -112,7 +112,7 @@ public class TrustYourHeartY : ModProjectile
 	{
 		int type = ModContent.ProjectileType<Sunlight>();
 		Player owner = Main.player[Projectile.owner];
-		owner.statMana = System.Math.Max(owner.statMana - 3, 0);
+		owner.statMana = System.Math.Max(owner.statMana - 5, 0);
 
 		Projectile proj = Projectile.NewProjectileDirect(Projectile.GetSource_FromAI(), Projectile.Center, velocity, type, Projectile.damage, Projectile.knockBack / 2f, Projectile.owner, 0f, 0f);
 		proj.friendly = true;
