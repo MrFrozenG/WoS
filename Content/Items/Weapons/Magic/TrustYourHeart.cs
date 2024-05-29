@@ -57,11 +57,11 @@ public class TrustYourHeartY : ModProjectile
 	public override void SetStaticDefaults() 
 	{
 		ProjectileID.Sets.YoyosLifeTimeMultiplier[Projectile.type] = -1f;
-		ProjectileID.Sets.YoyosMaximumRange[Projectile.type] = 180f;
-		ProjectileID.Sets.YoyosTopSpeed[Projectile.type] = 8.5f;
+		ProjectileID.Sets.YoyosMaximumRange[Projectile.type] = 250f;
+		ProjectileID.Sets.YoyosTopSpeed[Projectile.type] = 13.5f;
 		
 		ProjectileID.Sets.TrailCacheLength[Type] = 4;
-			ProjectileID.Sets.TrailingMode[Type] = 0;
+		ProjectileID.Sets.TrailingMode[Type] = 0;
 	}
 	
 	public override void SetDefaults() 
