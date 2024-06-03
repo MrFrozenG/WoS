@@ -119,15 +119,16 @@ Items: {
 			Turn the dark of the night into day!'
 			'''
 	}
+
 	TrustYourHeart: {
 		DisplayName: Trust your heart
 		Tooltip:
-		'''
-		Fires a projectile at the nearest enemy
-		So don't be afraid
-		Trust your heart, keep your head in the game
-		(Keep up, keep up, and never be afraid)
-		'''
+			'''
+			Fires a projectile at the nearest enemy
+			So don't be afraid
+			Trust your heart, keep your head in the game
+			(Keep up, keep up, and never be afraid)
+			'''
 	}
 
 	##Projectiles
@@ -135,11 +136,22 @@ Items: {
 		DisplayName: Sunshine
 		Tooltip: Releases concentrated sunlight to blind your enemies!
 	}
+
+	TestWeapon: {
+		DisplayName: Test Weapon
+		Tooltip: ""
+	}
+
+	Hive: {
+		DisplayName: Hive
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
 	AncientClass.DisplayName: Ancient Class
 	OtherworldClass.DisplayName: Otherworld damage
+	ForbiddenClass.DisplayName: Forbidden damage
 }
 
 Projectiles: {
@@ -148,5 +160,5 @@ Projectiles: {
 	CosmicEnergy.DisplayName: Cosmic energy
 	Sunlight.DisplayName: Sunlight
 	SunlightA.DisplayName: Sunlight (Sunshine)
-	TrustYourHeartY.DisplayName: Trust Your Heart Y
+	TrustYourHeartY.DisplayName: Trust your heart
 }

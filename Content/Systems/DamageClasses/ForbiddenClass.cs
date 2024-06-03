@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace WoS.Content.Systems.DamageClasses;
 
-public class AncientClass : DamageClass
+public class ForbiddenClass : DamageClass
 {
 	public override bool UseStandardCritCalcs => true;
 
@@ -23,8 +23,8 @@ public class AncientClass : DamageClass
 
 	public override void SetDefaultStats(Player player)
 	{
-		player.GetCritChance<AncientClass>() = -4f;
-		player.GetArmorPenetration<AncientClass>() = 1f;
+		player.GetCritChance<ForbiddenClass>() = -4f;
+		player.GetArmorPenetration<ForbiddenClass>() = 1f;
 	}
 }
 	

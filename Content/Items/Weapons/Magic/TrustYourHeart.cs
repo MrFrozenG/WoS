@@ -78,7 +78,17 @@ public class TrustYourHeartY : ModProjectile
 	{
 		for (int i = 0; i < 2; i++)
 		{
-			Dust dust = Dust.NewDustDirect(Projectile.Center, Projectile.width, Projectile.height, DustID.PurificationPowder, Scale: 0.6f);
+			Dust dust = Dust.NewDustDirect(Projectile.Center, Projectile.width, Projectile.height, DustID.HallowedWeapons, Scale: 0.7f);
+			dust.noGravity = true;
+
+			Vector2 vector = Main.rand.NextVector2Unit() * Main.rand.NextFloat(2.0f, 4.0f);
+			dust.velocity = vector;
+			dust.position = Projectile.Center - (vector * 24f);
+		}
+		
+		for (int i = 0; i < 3; i++)
+		{
+			Dust dust = Dust.NewDustDirect(Projectile.Center, Projectile.width, Projectile.height, DustID.YellowTorch, Scale: 0.3f);
 			dust.noGravity = true;
 
 			Vector2 vector = Main.rand.NextVector2Unit() * Main.rand.NextFloat(2.0f, 4.0f);
