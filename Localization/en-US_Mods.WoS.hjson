@@ -160,6 +160,11 @@ Items: {
 		Tooltip: Ignites on hit
 		DisplayName: Endless Molten bullets pouch
 	}
+
+	FrostStone: {
+		DisplayName: Frost Stone
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
