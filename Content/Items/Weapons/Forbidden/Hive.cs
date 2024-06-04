@@ -91,35 +91,6 @@ namespace WoS.Content.Items.Weapons.Forbidden
 					}
 				}
 			}
-			
-			/*			
-			int NumProjectiles = 3;
-			for (int i = 0; i < NumProjectiles; i++) 
-			{
-				if (type == ProjectileID.Bee)
-				{
-					Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(3));
-					newVelocity *= 1f - Main.rand.NextFloat(0.2f);
-					Projectile.NewProjectileDirect(source, position, newVelocity, type, Item.damage/2, knockback, player.whoAmI);
-					for (int a = 0; i <  Main.rand.Next(2,7); a++) 
-					{
-						Projectile.NewProjectileDirect(source, position, velocity, type, Item.damage, knockback, player.whoAmI);
-					}
-					if (player.strongBees) 
-					{
-						for (int b = 0; i <  Main.rand.Next(0,3); b++) 
-						{
-							Projectile.NewProjectileDirect(source, position, velocity, ProjectileID.GiantBee, Item.damage, knockback, player.whoAmI);
-						}
-					}
-				}
-				else 
-				{
-				Projectile.NewProjectileDirect(source, position, velocity, type, damage, knockback, player.whoAmI); 
-				}
-			}
-			
-			*/
 		return false;
 		}
 	}
