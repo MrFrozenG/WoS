@@ -9,7 +9,7 @@ Items: {
 
 	FrostBullet: {
 		DisplayName: Frost bullet
-		Tooltip: ""
+		Tooltip: Inflicts target with Frostburn
 	}
 
 	##Accessories
@@ -153,12 +153,12 @@ Items: {
 
 	Hellflames: {
 		DisplayName: Hellflames
-		Tooltip: Throws from 3 to 9 Molten knives at a time
+		Tooltip: Throws from 3 to 8 Molten knives at a time
 	}
 
 	EndlessMoltenBulletPouch: {
-		Tooltip: ""
-		DisplayName: Endless Molten Bullet Pouch
+		Tooltip: Ignites on hit
+		DisplayName: Endless Molten bullets pouch
 	}
 }
 
@@ -177,4 +177,5 @@ Projectiles: {
 	TrustYourHeartY.DisplayName: "{$Mods.WoS.Items.TrustYourHeart.DisplayName}"
 	MoltenKnifeThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
 	HellflamesThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	VolcanoSlash.DisplayName: Volcano slash
 }
