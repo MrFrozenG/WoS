@@ -131,20 +131,34 @@ Items: {
 			'''
 	}
 
-	##Projectiles
 	Sunshine: {
 		DisplayName: Sunshine
 		Tooltip: Releases concentrated sunlight to blind your enemies!
 	}
 
-	TestWeapon: {
-		DisplayName: Test Weapon
-		Tooltip: ""
-	}
-
 	Hive: {
 		DisplayName: Hive
+		Tooltip:
+			'''
+			Three round burst
+			5/50/100% chance to save ammo
+			Musked balls turn into a column of bees
+			'''
+	}
+
+	MoltenKnife: {
+		DisplayName: Molten knife
+		Tooltip: Ignites enemies on hit
+	}
+
+	Hellflames: {
+		DisplayName: Hellflames
+		Tooltip: Throws from 3 to 9 Molten knives at a time
+	}
+
+	EndlessMoltenBulletPouch: {
 		Tooltip: ""
+		DisplayName: Endless Molten Bullet Pouch
 	}
 }
 
@@ -155,10 +169,12 @@ DamageClasses: {
 }
 
 Projectiles: {
-	MoltenBulletShot.DisplayName: Molten bullet
-	FrostBulletShot.DisplayName: Frost bullet
+	MoltenBulletShot.DisplayName: "{$Mods.WoS.Items.MoltenBullet.DisplayName}"
+	FrostBulletShot.DisplayName: "{$Mods.WoS.Items.FrostBullet.DisplayName}"
 	CosmicEnergy.DisplayName: Cosmic energy
 	Sunlight.DisplayName: Sunlight
 	SunlightA.DisplayName: Sunlight (Sunshine)
-	TrustYourHeartY.DisplayName: Trust your heart
+	TrustYourHeartY.DisplayName: "{$Mods.WoS.Items.TrustYourHeart.DisplayName}"
+	MoltenKnifeThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	HellflamesThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
 }

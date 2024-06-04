@@ -26,7 +26,7 @@ public class MoltenBullet : ModItem
 		Item.shoot = ModContent.ProjectileType<MoltenBulletShot>();
 		
 		Item.value = Item.sellPrice(0, 0, 5, 5);
-		Item.rare = ItemRarityID.Green;
+		Item.rare = ItemRarityID.Orange;
 	}
 
 	public override void AddRecipes()
@@ -34,6 +34,32 @@ public class MoltenBullet : ModItem
 		CreateRecipe(333)
 		.AddIngredient(ItemID.MusketBall, 333)
 		.AddIngredient(ItemID.HellstoneBar)
+		.AddTile(TileID.Anvils)
+			.Register();
+	}
+}
+
+public class EndlessMoltenBulletPouch : ModItem
+{
+	public override void SetDefaults()
+	{
+		Item.CloneDefaults(ModContent.ItemType<MoltenBullet>());
+		Item.damage = 11;
+		Item.consumable = false;
+		Item.maxStack = 1;
+		
+		Item.width = 26;
+		Item.height = 34;
+		
+		Item.shoot = ModContent.ProjectileType<MoltenBulletShot>();
+		
+		Item.value = Item.sellPrice(0, 0, 5, 5);
+	}
+
+	public override void AddRecipes()
+	{
+		CreateRecipe()
+		.AddIngredient(ModContent.ItemType<MoltenBullet>(), 9999)
 		.AddTile(TileID.Anvils)
 			.Register();
 	}

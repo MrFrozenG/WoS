@@ -29,7 +29,7 @@ namespace WoS.Content.Items.Weapons.Forbidden
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.useAnimation = 15;
 			Item.useTime = 5;
-			Item.reuseDelay = 25;
+			Item.reuseDelay = 15;
 			Item.autoReuse = true;
 			Item.UseSound = SoundID.Item11;
 		
@@ -57,28 +57,69 @@ namespace WoS.Content.Items.Weapons.Forbidden
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
 			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3));
-		}
-		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) 
-		{
-			int NumProjectiles = Main.rand.Next(1,6);
 			if (type == ProjectileID.Bullet || type == ProjectileID.SilverBullet) 
 			{
 				type = ProjectileID.Bee; 
 				Item.shootSpeed = 5.5f;
 				Item.reuseDelay = 5;
-				for (int i = 0; i < NumProjectiles; i++) 
+			}
+			else 
+			{
+				Item.reuseDelay = 15;
+				Item.shootSpeed = 12.5f;
+			}
+		}
+		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) 
+		{
+			if (type != ProjectileID.Bee)
+			{
+				Projectile.NewProjectileDirect(source, position, velocity, type, damage, knockback, player.whoAmI);
+			}
+			else
+			{
+				for (int b = 0; b <  Main.rand.Next(2,4); b++) 
 				{
 					Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(3));
 					newVelocity *= 1f - Main.rand.NextFloat(0.2f);
 					Projectile.NewProjectileDirect(source, position, newVelocity, type, Item.damage/2, knockback, player.whoAmI);
+					if (player.strongBees && Main.rand.NextBool(4))
+					{
+						for (int c = 0; c <  Main.rand.Next(0,2); c++) 
+						{
+							Projectile.NewProjectileDirect(source, position, velocity, ProjectileID.GiantBee, Item.damage, knockback, player.whoAmI);
+						}
+					}
 				}
 			}
-			else 
+			
+			/*			
+			int NumProjectiles = 3;
+			for (int i = 0; i < NumProjectiles; i++) 
 			{
+				if (type == ProjectileID.Bee)
+				{
+					Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(3));
+					newVelocity *= 1f - Main.rand.NextFloat(0.2f);
+					Projectile.NewProjectileDirect(source, position, newVelocity, type, Item.damage/2, knockback, player.whoAmI);
+					for (int a = 0; i <  Main.rand.Next(2,7); a++) 
+					{
+						Projectile.NewProjectileDirect(source, position, velocity, type, Item.damage, knockback, player.whoAmI);
+					}
+					if (player.strongBees) 
+					{
+						for (int b = 0; i <  Main.rand.Next(0,3); b++) 
+						{
+							Projectile.NewProjectileDirect(source, position, velocity, ProjectileID.GiantBee, Item.damage, knockback, player.whoAmI);
+						}
+					}
+				}
+				else 
+				{
 				Projectile.NewProjectileDirect(source, position, velocity, type, damage, knockback, player.whoAmI); 
-				Item.reuseDelay = 25;
-				Item.shootSpeed = 12.5f;
+				}
 			}
+			
+			*/
 		return false;
 		}
 	}
