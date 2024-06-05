@@ -5,6 +5,7 @@ using Terraria.DataStructures;
 
 using Microsoft.Xna.Framework;
 using System;
+using Microsoft.Build.Construction;
 
 namespace WoS.Content.Systems.SysPlayers;
 
@@ -24,9 +25,9 @@ public class WoSPlayerMelee : ModPlayer
 		if (FrostStone && item.CountsAsClass(DamageClass.Melee))
 		{
         if (Main.rand.Next(4) == 0)
-			target.AddBuff(BuffID.Frostburn, 360);
+			target.AddBuff(BuffID.Frostburn2, 360);
 		else if (Main.rand.Next(2) == 0)
-			target.AddBuff(BuffID.Frostburn, 240);
+			target.AddBuff(BuffID.Frostburn2, 240);
 		else
 			target.AddBuff(BuffID.Frostburn, 120);
 		}
@@ -36,25 +37,13 @@ public class WoSPlayerMelee : ModPlayer
 		if (FrostStone && proj.CountsAsClass(DamageClass.Melee))
 		{
         if (Main.rand.Next(4) == 0)
-			target.AddBuff(BuffID.Frostburn, 360);
+			target.AddBuff(BuffID.Frostburn2, 360);
 		else if (Main.rand.Next(2) == 0)
-			target.AddBuff(BuffID.Frostburn, 240);
+			target.AddBuff(BuffID.Frostburn2, 240);
 		else
-			target.AddBuff(BuffID.Frostburn, 120);
+			target.AddBuff(BuffID.Frostburn2, 120);
 		}
 	}
-
-/*	public override void MeleeEffects(Item sItem)
-	{
-		if (FrostStone && sItem.melee && !sItem.noMelee && !sItem.noUseGraphic && Main.rand.Next(3) != 0)
-		{
-        int index = Dust.NewDust(new Vector2((float) itemRectangle.X, (float) itemRectangle.Y), itemRectangle.Width, itemRectangle.Height, 6, this.velocity.X * 0.2f + (float) (this.direction * 3), this.velocity.Y * 0.2f, 100, Scale: 2.5f);
-        Main.dust[index].noGravity = true;
-        Main.dust[index].velocity.X *= 2f;
-        Main.dust[index].velocity.Y *= 2f;
-		}
-		return itemRectangle;
-	}*/
 
     public override void MeleeEffects(Item item, Rectangle hitbox)
     {
@@ -68,4 +57,19 @@ public class WoSPlayerMelee : ModPlayer
 		}
     }
 }
+
+public class WoSPlayerMeleeProjectiles : GlobalProjectile
+{
+	public override bool InstancePerEntity => true;
 	
+	public override void PostAI(Projectile projectile) 
+	{
+		Player player = Main.player[projectile.owner];
+		
+		if (player.GetModPlayer<WoSPlayerMelee>().FrostStone && projectile.CountsAsClass(DamageClass.Melee) && Main.rand.Next(3) != 0) 
+		{
+			Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.IceTorch, projectile.velocity.X, projectile.velocity.Y, 100, default(Color), 2f);
+
+        }
+	}
+}
