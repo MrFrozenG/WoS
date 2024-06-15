@@ -165,6 +165,16 @@ Items: {
 		DisplayName: Frost Stone
 		Tooltip: ""
 	}
+
+	DevilFangs: {
+		DisplayName: Devil Fangs
+		Tooltip: ""
+	}
+
+	StaffFateThreads: {
+		DisplayName: Staff Fate Threads
+		Tooltip: ""
+	}
 }
 
 DamageClasses: {
@@ -183,4 +193,7 @@ Projectiles: {
 	MoltenKnifeThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
 	HellflamesThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
 	VolcanoSlash.DisplayName: Volcano slash
+	PhoenixShot.DisplayName: Phoenix Shot
+	DevilFangsThrow.DisplayName: Devil Fangs Throw
+	DisciplineMark.DisplayName: Discipline Mark
 }

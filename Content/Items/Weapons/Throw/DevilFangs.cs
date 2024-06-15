@@ -6,9 +6,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 
-namespace WoS.Content.Items.Consumables.Weapons;
+namespace WoS.Content.Items.Weapons.Throw;
 
-public class MoltenKnife : ModItem
+public class DevilFangs : ModItem
 {		
 	public override void SetDefaults()
 	{
@@ -17,40 +17,57 @@ public class MoltenKnife : ModItem
 		Item.knockBack = 1.8f;			
 		Item.crit = 4;
 		Item.noMelee = true;
-		Item.maxStack = Item.CommonMaxStack;
 			
 		Item.width = 14;
 		Item.height = 30;
 		Item.useStyle = ItemUseStyleID.Swing;
 		Item.useAnimation = 13;
 		Item.useTime = 13;
-		Item.noUseGraphic = true;
-			
-		Item.consumable = true;
+
 		Item.autoReuse = true;
 		Item.UseSound = SoundID.Item1;
 	
-		Item.shoot = ModContent.ProjectileType<MoltenKnifeThrow>();
+		Item.shoot = ModContent.ProjectileType<DevilFangsThrow>();
 		Item.shootSpeed = 10f;
 		
 		Item.rare = ItemRarityID.Orange;
-		Item.value = Item.sellPrice(0, 0, 1, 35);
+		Item.value = Item.sellPrice(0, 0, 66, 6);
+	
 	}
 	public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 	{
 		velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3));
 	}
+	public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) 
+	{
+//		Projectile.NewProjectileDirect(source, position, velocity, type, damage, knockback, player.whoAmI);
+		int NumProjectiles = Main.rand.Next(3,8);
+		for (int i = 0; i < NumProjectiles; i++) 
+		{
+			Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(9));
+			newVelocity *= 1f - Main.rand.NextFloat(0.3f);
+			Projectile.NewProjectileDirect(source, position, newVelocity, type, damage/2, knockback, player.whoAmI);
+		}
+		return false;
+	}
 }
 
-public class MoltenKnifeThrow : ModProjectile
+public class DevilFangsThrow : ModProjectile
 {
+//	public override string Texture => "WoS/Content/Items/Consumables/Weapons/MoltenKnifeThrow";
 	public override void SetStaticDefaults() 
 	{
 		ProjectileID.Sets.TrailCacheLength[Projectile.type] = 2;
 		ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 	}
-	
-	public int GravityDelayTimer 
+
+    public override Color? GetAlpha(Color lightColor)
+    {
+        if (Main.bloodMoon) return new Color(140, 0, 15, 0) * Projectile.Opacity;
+        else return new Color(255, 165, 0, 0) * Projectile.Opacity;
+    }
+
+    public int GravityDelayTimer 
 	{
 		get => (int)Projectile.ai[2];
 		set => Projectile.ai[2] = value;
@@ -69,9 +86,9 @@ public class MoltenKnifeThrow : ModProjectile
 	}
 	public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
 	{
-		target.AddBuff(BuffID.OnFire, 120);
+		if (Main.rand.NextBool(3)) target.AddBuff(BuffID.OnFire, 180);
 	}
-	private const int GravityDelay = 45;
+	private const int GravityDelay = 95;
 	public override void AI() 
 	{
 		Projectile.direction = (Projectile.velocity.X > 0).ToDirectionInt();
@@ -110,18 +127,6 @@ public class MoltenKnifeThrow : ModProjectile
 			dust.velocity *= 0.5f;
 			dust.noGravity = true;
 			usePos -= usePos * 8f;
-		}
-		if (Projectile.owner == Main.myPlayer) 
-		{
-			int item = 0;
-			if (Main.rand.NextBool(18)) 
-			{
-				item = Item.NewItem(Projectile.GetSource_DropAsItem(), Projectile.getRect(), ModContent.ItemType<MoltenKnife>());
-			}
-			if (Main.netMode == NetmodeID.MultiplayerClient && item >= 0) 
-			{
-				NetMessage.SendData(MessageID.SyncItem, -1, -1, null, item, 1f);
-			}
 		}
 	}
 }

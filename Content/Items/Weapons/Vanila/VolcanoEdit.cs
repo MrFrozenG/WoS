@@ -8,8 +8,7 @@ using Terraria.GameContent.Drawing;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WoS.Content.Items.Weapons.Melee;
-
+namespace WoS.Content.Items.Weapons.Vanila;
 
 public class VolcanoEdit : GlobalItem
 {
@@ -27,8 +26,8 @@ public class VolcanoEdit : GlobalItem
 		
 		item.damage = 30;
 		
-		item.useAnimation /= 2;
-		item.useTime /= 2;
+//		item.useAnimation *= 2;
+//		item.useTime *= 2;
 	}
 	public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) 
 	{
@@ -42,7 +41,9 @@ public class VolcanoEdit : GlobalItem
 
 public class VolcanoSlash : ModProjectile
 {
-	public override void SetStaticDefaults() 
+
+ //   public override string Texture => "WoS/Content/Items/Weapons/Vanila/EverlastinFlame";
+    public override void SetStaticDefaults() 
 	{
 		ProjectileID.Sets.AllowsContactDamageFromJellyfish[Type] = true;
 		Main.projFrames[Type] = 4; 

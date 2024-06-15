@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jr0R9I10gpYwx9fCOmbWCNtyKJJJJ3QgSjAaeuktAPhpOiqb+2/xQ3kQ+NdZ39VtOuYojISCKP9RiE07+xJLKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Danil\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WoS\\WoS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danil\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
