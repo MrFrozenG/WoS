@@ -197,3 +197,9 @@ Projectiles: {
 	DevilFangsThrow.DisplayName: Devil Fangs Throw
 	DisciplineMark.DisplayName: Discipline Mark
 }
+
+NPCs: {
+	RemnantBossBody.DisplayName: Remnant Boss Body
+	RemnantBossHead.DisplayName: Remnant Boss Head
+	RemnantBossTail.DisplayName: Remnant Boss Tail
+}

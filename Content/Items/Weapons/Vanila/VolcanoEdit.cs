@@ -54,7 +54,7 @@ public class VolcanoSlash : ModProjectile
 		Projectile.height = 16;
 		Projectile.friendly = true;
 		Projectile.DamageType = DamageClass.Melee;
-		Projectile.penetrate = -1; // The projectile can hit 3 enemies.
+		Projectile.penetrate = 7; // The projectile can hit 3 enemies.
 		Projectile.usesLocalNPCImmunity = true;
 		Projectile.localNPCHitCooldown = -1;
 		Projectile.tileCollide = false;
