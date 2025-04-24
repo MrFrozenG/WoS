@@ -1,12 +1,257 @@
-# This file will automatically update with entries for new content after a build and reload
+#FILTERS
+#
+#	Config
+#	General (Tips, Events, Messages, other stuff)
+#	Bestiary
+#	NPCs
+#	DamageClasses
+#	Tiles
+#	Items
+#Ammo
+#Potions
+#Resources
+#Accessories
+#Tools
+#Weapons
+#Consumables
+#Other
+#Placeable
+#Vanity
+#Last
+#	Projectiles
+#	Buffs
+###
+### ABOUT MOD VERSION
+### 14042025.0010.00
+### 14.04.2025 (date of update release)
+### 0010 (Group of update) (10 group)
+### 00 (Additional info)
+###
+
+###CONFIGS###
+Configs: {
+	ContentConfig: {
+		DisplayName: Content config
+		Headers.Familiars: "[Familiars]"
+
+		FamiliarsSystem: {
+			Label: is Familiars enabled
+			Tooltip: Affects the presence of Familiars in the game.
+		}
+	}
+
+	VanilaConfig: {
+		DisplayName: Vanila content rework
+
+		Headers: {
+			NPCs: "[NPCs]"
+			Weapons: "[Weapons]"
+			Misc: "[Misc]"
+		}
+
+		ReworkPhoenixBlaster: {
+			Label: Phoenix blaster rework
+			Tooltip: If enabled, it modifies the Phoenix Blaster, adding the ability to auto-fire, and also adds Phoenix Energy mechanics: Every 4 shots allow you to use an alternative attack.
+		}
+
+		ReworkVolcano: {
+			Label: Volcano rework
+			Tooltip: If enabled, it modifies the Volcano sword, affecting damage as well as the method of attack.
+		}
+
+		ReworkSpears: {
+			Label: Spears rework
+			Tooltip: if enabled, it modifies some vanila spears
+		}
+
+		ConfigExplosivesAutouse: {
+			Label: Explosives: Auto-use
+			Tooltip: If enabled, it allows to use an auto-attack for Explosives.
+		}
+
+		ConfigExplosivesThrowSpeed: {
+			Label: Explosives: Throwing speed
+			Tooltip: Changes the speed of explosives. Default: 25
+		}
+
+		AlternativeTexturesVanilaKeys: {
+			Label: Alternative Textures for vanila keys
+			Tooltip: ""
+		}
+
+		InvincibleTownNPCS: {
+			Label: NPC: Town-NPCs are Invincible
+			Tooltip:
+				'''
+				Town NPCs don't take Damage
+				If a weapon should drop from a Town NPC at death, it will be in the NPC shop.
+				'''
+		}
+
+		ReworkSummonItems: {
+			Label: Boss summons Rework
+			Tooltip:
+				'''
+				Boss summoning items are no longer consumable. 
+				Their price and crafting has been changed.
+				'''
+		}
+
+		ReworkClentaminator: {
+			Label: Clentaminator Rework
+			Tooltip:
+				'''
+				Increases the range of the Clentaminator
+				Solutions are consumed faster and cost more
+				'''
+		}
+
+		ReworkSummonMimics: {
+			Label: Big mimics summons rework
+			Tooltip:
+				'''
+				Keys for summoning Mimics are no longer consumable. 
+				Use the Key near the empty chest to summon the big mimic you need.
+				'''
+		}
+	}
+}
+
+General: {
+	GlobalTips: {
+		RightClick: Right click
+		ProgressBar: Progress:
+	}
+
+	Gamemode: {
+		PostHardmode: {
+			UnleashedChaos: Blah
+			UnleashedLight: Light and Shadows
+		}
+	}
+}
+
+Bestiary.JungleHardmode.BigMimicBlooming: The mimics are overflowing with vitality, which makes them stronger. They became one with the force of nature. They can be birthed from ordinary chests by force.
+NPCs.BigMimicBlooming.DisplayName: Blooming mimic
+
+#DAMAGE CLASSES
+###LegacyTooltip.2 Melee
+###LegacyTooltip.3 Ranged
+###LegacyTooltip.4 Magic
+###LegacyTooltip.53 Summon minion damage
+DamageClasses: {
+	SupportClass: {
+		Additional: (Support)
+		DisplayName: Support damage
+		SupportPoints.DisplayName: Support points
+	}
+
+	OtherworldClass.DisplayName: Otherworld damage
+	ForbiderDamage.DisplayName: "[???] damage"
+	MeleeSupport.DisplayName: "{$LegacyTooltip.2} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	MeleeNoSpeedSupport.DisplayName: "{$Mods.WoS.DamageClasses.MeleeSupport.DisplayName}"
+	RangedSupport.DisplayName: "{$LegacyTooltip.3} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	MagicSupport.DisplayName: "{$LegacyTooltip.4} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	SummonSupport.DisplayName: "{$LegacyTooltip.53} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	SummonMeleeSpeedSupport.DisplayName: "{$Mods.WoS.DamageClasses.SummonSupport.DisplayName}"
+}
+
+Tiles.BaseBannerTile.MapEntry: Banner
 
 Items: {
+<<<<<<< Updated upstream
 	TurnToOblivion: {
 		DisplayName: Turn To Oblivion
 		Tooltip: ""
 	}
 
 	##Accessories other
+=======
+	#Ammo
+	MoltenBullet: {
+		DisplayName: Molten bullet
+		Tooltip: Ignites on hit
+	}
+
+	FrostBullet: {
+		DisplayName: Frost bullet
+		Tooltip: Inflicts target with Frostburn
+	}
+
+	MoltenBulletPouch: {
+		DisplayName: Endless Molten bullets pouch
+		Tooltip: "{$Mods.WoS.Items.MoltenBullet.Tooltip}"
+	}
+
+	HiveBullet: {
+		DisplayName: Hive bullet
+		Tooltip: Releases several bees on impact
+	}
+
+	PoisonedNail: {
+		DisplayName: Poisoned nail
+		Tooltip: ""
+	}
+
+	CursedNail: {
+		DisplayName: Cursed nail
+		Tooltip: ""
+	}
+
+	MoltenNail: {
+		DisplayName: Molten nail
+		Tooltip: ""
+	}
+
+	IllusiveNail: {
+		DisplayName: Illusive Nail
+		Tooltip: ""
+	}
+
+	#Potions
+	#Resources
+	Ekuripusium: {
+		DisplayName: Ekuripusium
+		Tooltip:
+			'''
+			'Charged with the essence of dark sun'
+			Pulsates in the daytime...
+			'''
+	}
+
+	#Accessories
+	DryadsFlower: {
+		DisplayName: Dryads Flower
+		Tooltip:
+			'''
+			Increases slightly support abilities
+			'Gift from Dryad'
+			'''
+	}
+
+	VoidHairpin: {
+		DisplayName: Void hairpin
+		Tooltip:
+			'''
+			'Great for impersonating herrscher!'
+			2% Increased melee damage
+			2% Increased ranged damage
+			'''
+	}
+
+	PossessedSkull: {
+		DisplayName: Possessed skull
+		Tooltip:
+			'''
+			'You feel that he is watching you...'
+			Enemies are less likely to target you
+			Increases your summon damage by 5%
+			Hitting target with a whip can cause a "Mysterious Skull" over the target.
+			Only 3 skulls can exist at a time
+			'''
+	}
+
+>>>>>>> Stashed changes
 	RemembranceSigil: {
 		DisplayName: Remembrance sigil
 		Tooltip:
@@ -16,43 +261,54 @@ Items: {
 			'''
 	}
 
+<<<<<<< Updated upstream
 	##Accessories Magic
 	TungstenGoblet: {
 		DisplayName: Tungsten goblet
+=======
+	HeartofSin: {
+		DisplayName: Heart of Sin
+>>>>>>> Stashed changes
 		Tooltip:
 			'''
-			May the future be blessed with gold?
-			Increases your magical and summon abilities
+			Increases maximum life by 35%
+			Additionaly increases maximum life by 20
+			Increased crit chance by 4%
+			Increased damage by 10%
 			'''
 	}
 
-	SilverGoblet: {
-		DisplayName: Silver goblet
+	#Tools
+	WeavingofFate: {
+		DisplayName: Weaving of Fate
 		Tooltip:
 			'''
-			May the future be blessed with gold?
-			Increases your magical and summon abilities
+			"I will write my story with my own hands!"
+			Cancels events that are currently taking place.
 			'''
 	}
 
-	GoldenGoblet: {
-		DisplayName: Golden goblet
+	#Weapons
+	Hive: {
+		DisplayName: Hive
 		Tooltip:
 			'''
-			May the future be blessed with gold?
-			Increases your magical and summon abilities
+			Three round burst
+			5/50/100% chance to save ammo
+			Musket balls turn into a column of bees
 			'''
 	}
 
-	PlatinumGoblet: {
-		DisplayName: Platinum goblet
+	Code17Star: {
+		DisplayName: Code 17: Star
 		Tooltip:
 			'''
-			May the future be blessed with gold?
-			Increases your magical and summon abilities
+			Feel the power from space!
+			Does not consume mana at night
 			'''
 	}
 
+<<<<<<< Updated upstream
 	##Accessories Summon
 	PactCrystal: {
 		DisplayName: Pact crystal
@@ -87,3 +343,289 @@ Items: {
 }
 
 DamageClasses.AncientClass.DisplayName: Ancient Class
+=======
+	CosmicJuggernaut: {
+		DisplayName: Cosmic Juggernaut
+		Tooltip: Replenishes your mana on impact if it is less than half.
+	}
+
+	SpectreKunai: {
+		DisplayName: Spectre kunai
+		Tooltip:
+			'''
+			Throws a few Spectre kunai. 
+			Spectre kunai creates an its own copy on hit
+			'''
+	}
+
+	StaffCelestialOrder: {
+		DisplayName: Staff of Celestial order
+		Tooltip:
+			'''
+			Puts a "Pure will" buff on your allies
+			The player using the staff gets a "Pure Desire" buff
+
+			'Pure will': Increases damage and damage resistance for player
+			'Pure desire': Increases movement speed, magic damage and reduces mana cost 
+
+			'I command the heavens to punish my enemies, and bless my comrades!'
+			'''
+	}
+
+	StaffofBlizzard: {
+		DisplayName: Staff of Blizzard
+		Tooltip: Summons many ice arrows from the sky
+	}
+
+	TrustYourHeart: {
+		DisplayName: Trust your heart
+		Tooltip:
+			'''
+			Fires a projectile at the nearest enemy
+			So don't be afraid
+			Trust your heart, keep your head in the game
+			(Keep up, keep up, and never be afraid)
+			'''
+	}
+
+	Stomach: {
+		DisplayName: Stomach
+		Tooltip: Releases three Hungry who follow the target
+	}
+
+	VileSpreader: {
+		DisplayName: Vile spreader
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up connected blades
+			The blades split into two separate blades after a while
+			Demonite blade: Slightly ignores enemy armor
+			Vile blade: Has chance to inflict shadowflame/poison
+			'''
+	}
+
+	BoneBreaker: {
+		DisplayName: Bone breaker
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up connected blades
+			The blades split into two separate blades after a while
+			Living Bone blade: heals player by 5 on hit
+			Crimtane blade: has increased crit.chance
+			'''
+	}
+
+	MoltenDualBlades: {
+		DisplayName: Molten dual blades
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up to three connected blades
+			({$Mods.WoS.General.GlobalTips.RightClick}): Divides the blades into 4 parts
+			'''
+	}
+
+	HurricaneofNails: {
+		DisplayName: Hurricane of Nails
+		Tooltip:
+			'''
+			15% chance to save ammo
+			It's time to hammer nails into the coffins of your enemies!
+			Nails pierce the armor of enemies
+			'''
+	}
+
+	DevilFangs: {
+		DisplayName: Devil Fangs
+		Tooltip: Throws several hell knifes at time
+	}
+
+	Sparks: {
+		DisplayName: Sparks
+		Tooltip:
+			'''
+			'Cause sparks light the flame
+			Turn the dark of the night into day!'
+			'''
+	}
+
+	Sunshine: {
+		DisplayName: Sunshine
+		Tooltip: Releases concentrated sunlight to blind your enemies!
+	}
+
+	ShadowofAmaterasu: {
+		DisplayName: Shadow of Amaterasu
+		Tooltip:
+			'''
+			35% chance to save ammo
+			'The Newborn God'
+			'''
+	}
+
+	ShadowofBoreas: {
+		DisplayName: Shadow of Boreas
+		Tooltip:
+			'''
+			35% chance to save ammo
+			'The Newborn God'
+			'''
+	}
+
+	Embermaw: {
+		DisplayName: Embermaw
+		Tooltip:
+			'''
+			15% chance to save ammo
+			Musket balls turn into a Molten bullets
+			'''
+	}
+
+	WildBeast: {
+		DisplayName: Wild beast
+		Tooltip:
+			'''
+			Hunter's favorite weapon
+			A pleasant-to-use hunting tool
+			Wooden arrows have a higher critical chance, increased damage and velocity
+			'''
+	}
+
+	FrostbrandGrimoire: {
+		DisplayName: Frostbrand Grimoire
+		Tooltip: Summons several magic ice blades that fly towards the point
+	}
+
+	#Consumables
+	GrowthKey: {
+		DisplayName: Growth key
+		Tooltip: "'Charged with the essence of many souls'"
+	}
+
+	MoltenKnife: {
+		DisplayName: Molten knife
+		Tooltip: Ignites enemies on hit
+	}
+
+	BoneKnife: {
+		DisplayName: Bone knife
+		Tooltip:
+			'''
+			Ooops! 
+			Splits into three fragments after a while
+			'''
+	}
+
+	#Other
+	#Placeable
+	BigMimicBloomingBanner: {
+		DisplayName: Blooming mimic banner
+		Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.WoS.NPCs.BigMimicBlooming.DisplayName}"
+	}
+}
+
+###PROJECTILES###
+Projectiles: {
+	#Ammo
+	MoltenBulletS.DisplayName: "{$Mods.WoS.Items.MoltenBullet.DisplayName}"
+	FrostBulletS.DisplayName: "{$Mods.WoS.Items.FrostBullet.DisplayName}"
+	HiveBulletS.DisplayName: "{$Mods.WoS.Items.HiveBullet.DisplayName}"
+	PoisonedNailS.DisplayName: "{$Mods.WoS.Items.PoisonedNail.DisplayName}"
+	CursedNailS.DisplayName: "{$Mods.WoS.Items.CursedNail.DisplayName}"
+	MoltenNailS.DisplayName: "{$Mods.WoS.Items.MoltenNail.DisplayName}"
+	IllusiveNailS.DisplayName: "{$Mods.WoS.Items.IllusiveNail.DisplayName}"
+	#Magic weapons
+	CosmicEnergy.DisplayName: Cosmic energy
+	Sunlight.DisplayName: Sunlight
+	TrustYourHeartY.DisplayName: "{$Mods.WoS.Items.TrustYourHeart.DisplayName}"
+	MoltenKnifeThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	HellflamesThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	VolcanoSlash.DisplayName: Volcano slash
+	PhoenixShot.DisplayName: Phoenix flame
+	DevilFangsThrow.DisplayName: Devil fangs
+	CelestialOrderBlades.DisplayName: Celestial order
+	Sunshine_ShotA.DisplayName: Sunshine
+	Sunshine_Shot.DisplayName: Sunshine
+	SunshineShot.DisplayName: Sunshine
+	PhoenixBlasterShot.DisplayName: Phoenix energy
+	StaffofBlizzardShot.DisplayName: Blizzard crystal
+	StomachShot.DisplayName: Hungry
+	SpectreKunaiThrow.DisplayName: Spectre kunai
+	MoltenDualBladesThrow.DisplayName: Molten dual blades
+	DemoniteBlade.DisplayName: Demonite blade
+	VileBlade.DisplayName: Vile blade
+	BoneBreakerThrow.DisplayName: Bone blade
+	LivingBoneBlade.DisplayName: Living bone blade
+	MysteriousSkull.DisplayName: Mysterious skull
+	MysteriousSkullShot.DisplayName: Mysterious skull
+	VileSpreaderThrow.DisplayName: Vile spreader
+	CrimtaneBlade.DisplayName: Crimtane blade
+	MoltenBlade.DisplayName: Molten blade
+	ObsidianBlade.DisplayName: Obsidian blade
+	FrostbrandGrimoireBlade.DisplayName: Frostbrand magic blade
+	BoneKnifeThrow.DisplayName: Bone knife
+	BoneKnifeShard.DisplayName: Bone shard
+}
+
+###BUFFS###
+Buffs: {
+	BuffPureDesire: {
+		DisplayName: Pure desire
+		Description:
+			'''
+			10% increased movement speed
+			4% increased magic damage
+			5% reduced mana cost
+			'''
+	}
+
+	BuffPureWill: {
+		DisplayName: Pure will
+		Description:
+			'''
+			Reduces damage taken by 4%
+			7% increased damage
+			if health is less than 50%, the damage increases by another 10%
+			'''
+	}
+
+	DebuffDeepIllusions: {
+		DisplayName: "[c/#ff0000:Deep Illusions]"
+		Description: ""
+	}
+
+	Bleeding: {
+		DisplayName: Bleeding
+		Description:
+			'''
+			Deals damage once in a while
+			Damage depends on health
+			'''
+	}
+
+	Breaking: {
+		DisplayName: Breaking
+		Description: 20% Increased taken critical damage
+	}
+}
+
+Prefixes: {
+	Weapon: {
+		Support: {
+			SacredHelp.DisplayName: Sacred Help
+			Inspired.DisplayName: Inspired
+		}
+	}
+
+	Accessories: {
+		Support: {
+			Supportive.DisplayName: Supportive
+			Encouraging.DisplayName: Encouraging
+			Beneficial.DisplayName: Beneficial
+			Aiding.DisplayName: Aiding
+		}
+	}
+}
+>>>>>>> Stashed changes
