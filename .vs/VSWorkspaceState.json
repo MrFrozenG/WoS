@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Content",
+    "\\Content\\Items\\Weapons",
+    "\\Content\\Items\\Weapons\\Melee",
+    "\\Content\\Items\\Weapons\\Melee\\Sword",
+    "\\Content\\Projectiles",
+    "\\Content\\Projectiles\\Weapons",
+    "\\Content\\Projectiles\\Weapons\\Accessories",
+    "\\Content\\Projectiles\\Weapons\\Melee",
+    "\\Content\\Projectiles\\Weapons\\Melee\\Swords"
+  ],
+  "SelectedNode": "\\Content\\Projectiles\\Weapons\\Accessories",
+  "PreviewInSolutionExplorer": false
+}

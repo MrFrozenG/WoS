@@ -1,5 +1,12 @@
 displayName = Whisper of Shadows [WoS]
 author = MrFrozen (HaxxorFox)
+<<<<<<< Updated upstream
 version = 0.0.1
 hideCode = false
 hideResources = false
+=======
+version = 0.1.0
+hideCode = true
+hideResources = true
+TempVer: 0000070825.14.25A
+>>>>>>> Stashed changes

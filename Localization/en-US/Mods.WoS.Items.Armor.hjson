@@ -1,0 +1,45 @@
+#Armor
+ElderguardHelmet: {
+	DisplayName: Elderguard Helmet
+	Tooltip: WIP
+}
+
+ElderguardChestplate: {
+	DisplayName: Elderguard Chestplate
+	Tooltip: WIP
+}
+
+PearlescentHelmet: {
+	DisplayName: Pearlescent Helmet
+	Tooltip:
+		'''
+		5% {$Mods.WoS.General.CommonUsedTips.SupportDamageBoost}
+		{$Mods.WoS.General.CommonUsedTips.SupportPointsBoost} 1
+		'''
+	SetBonus:
+		'''
+
+		Chance 33% to inflict Pearlescent Weakness on enemy on hit
+		10% {$Mods.WoS.General.CommonUsedTips.SupportDamageBoost}
+		10% {$Mods.WoS.General.CommonUsedTips.SupportAttackSpeedBoost}
+		'''
+}
+
+PearlescentChestplate: {
+	DisplayName: Pearlescent Chestplate
+	Tooltip:
+		'''
+		5% {$Mods.WoS.General.CommonUsedTips.SupportDamageBoost}
+		{$Mods.WoS.General.CommonUsedTips.SupportPointsBoost} 1
+		'''
+}
+
+PearlescentLeggings: {
+	DisplayName: Pearlescent Leggings
+	Tooltip:
+		'''
+		5% {$Mods.WoS.General.CommonUsedTips.SupportDamageBoost}
+		{$Mods.WoS.General.CommonUsedTips.SupportPointsBoost} 1
+		10% {$Mods.WoS.General.CommonUsedTips.MoveSpeedBoost}
+		'''
+}

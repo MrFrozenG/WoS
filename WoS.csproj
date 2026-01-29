@@ -6,5 +6,13 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Content\Core\ModProjectile\" />
+    <Folder Include="Content\Items\Ammo\Rockets\" />
+    <Folder Include="Content\Items\Weapons\Summon\Whips\" />
+    <Folder Include="Content\Items\Weapons\Summon\Minions\" />
+    <Folder Include="Content\Projectiles\Weapons\Summon\Station\" />
+    <Folder Include="Content\Projectiles\Weapons\Summon\PetHelpers\" />
+    <Folder Include="Content\Projectiles\Weapons\Summon\Whips\" />
+    <Folder Include="Content\Projectiles\Weapons\Summon\Minions\" />
   </ItemGroup>
 </Project>

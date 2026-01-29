@@ -1,1 +1,6 @@
+<<<<<<< Updated upstream
 Whisper of Shadows [WoS] is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+=======
+Patch: V1.0 [NAMEVERSION] 
+Date: 07.08.2025.1425
+>>>>>>> Stashed changes

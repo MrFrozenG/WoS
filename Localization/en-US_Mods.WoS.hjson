@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # This file will automatically update with entries for new content after a build and reload
 
 Items: {
@@ -7,6 +8,177 @@ Items: {
 	}
 
 	##Accessories other
+=======
+DamageClasses: {
+	SupportClass: {
+		Additional: (Support)
+		DisplayName: Support damage
+		SupportPoints.DisplayName: Support points
+	}
+
+	OtherworldClass.DisplayName: Otherworld damage
+	ForbiderDamage.DisplayName: "[???] damage"
+	MeleeSupport.DisplayName: "{$LegacyTooltip.2} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	MeleeNoSpeedSupport.DisplayName: "{$Mods.WoS.DamageClasses.MeleeSupport.DisplayName}"
+	RangedSupport.DisplayName: "{$LegacyTooltip.3} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	MagicSupport.DisplayName: "{$LegacyTooltip.4} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	SummonSupport.DisplayName: "{$LegacyTooltip.53} {$Mods.WoS.DamageClasses.SupportClass.Additional}"
+	SummonMeleeSpeedSupport.DisplayName: "{$Mods.WoS.DamageClasses.SummonSupport.DisplayName}"
+}
+
+Tiles.BaseBannerTile.MapEntry: Banner
+
+Buffs: {
+	BurstSkyBless: {
+		DisplayName: Burst: Sky Bless
+		Description:
+			'''
+			15% Increased magic damage
+			{$ItemName.SkyFracture} and {$Mods.WoS.Items.SkyBoundGrimoire.DisplayName} are enhanced
+			'''
+	}
+
+	BurstUndyingSoul: {
+		DisplayName: Burst: Undying soul
+		Description:
+			'''
+			5% Increased damage
+			{0} Increased damage for Phoenix Blaster
+			Allows you to avoid death twice.
+			Reduces damage taken by {1}% 
+			'''
+	}
+
+	CooldownUndyingSoul: {
+		DisplayName: Cooldown: Undying soul
+		Description: ""
+	}
+
+	Bloodlust: {
+		DisplayName: Bloodlust
+		Description: Deals damage once in a while
+	}
+
+	LifeDebt: {
+		DisplayName: Life debt
+		Description:
+			'''
+			Deals damage once in a while
+			Damage depends on health
+			'''
+	}
+
+	Breaking: {
+		DisplayName: Breaking
+		Description: 20% Increased taken critical damage
+	}
+
+	BlazingStack: {
+		DisplayName: Blazing heart
+		Description:
+			'''
+			{0} / {1} stacks
+			Deals periodic damage depending on the number of stacks.
+			'''
+	}
+
+	DivineIntervention: {
+		DisplayName: Divine Intervention
+		Description:
+			'''
+			Defense is lowered by 10%
+			Damage reduced by 15%
+			'''
+	}
+
+	TwilightPhantomSigil: {
+		DisplayName: Sigil of Twilight Phantom
+		Description:
+			'''
+			Increased attack speed by {0}% up to 17.5%
+			More speed for god of speed!
+			'''
+	}
+
+	Discharge: {
+		Description: Mods.WoS.Buffs.Discharge.Description
+		DisplayName: Discharge
+	}
+
+	SnowmanMinionBuff: {
+		DisplayName: Cute Snowman Helper
+		Description: Let's Build a snowman together!
+	}
+
+	LittleGraniteElementalMinionBuff: {
+		DisplayName: Little Granite Elemental
+		Description: Who is cutie? He's cutie!
+	}
+
+	PearlescentWeakness: {
+		Description: Mods.WoS.Buffs.PearlescentWeakness.Description
+		DisplayName: Pearlescent Weakness
+	}
+}
+
+Items: {
+	##Ammo
+	MoltenBullet: {
+		DisplayName: Molten bullet
+		Tooltip: Ignites on hit
+	}
+
+	MoltenBulletPouch: {
+		DisplayName: Endless Molten bullets pouch
+		Tooltip: "{$Mods.WoS.Items.MoltenBullet.Tooltip}"
+	}
+
+	HiveBullet: {
+		DisplayName: Hive bullet
+		Tooltip: Releases several bees on impact
+	}
+
+	#Resources
+	Ekuripusium: {
+		DisplayName: Ekuripusium
+		Tooltip:
+			'''
+			'Charged with the essence of dark sun'
+			Pulsates in the daytime...
+			'''
+	}
+
+	FragmentofFallenStar: {
+		DisplayName: Fragment of Fallen Star
+		Tooltip:
+			'''
+			'Charged with the essence of sky'
+			A fragment of a star that suddenly met its end
+			'''
+	}
+
+	#Accessories
+	DryadsFlower: {
+		DisplayName: Dryads Flower
+		Tooltip:
+			'''
+			{$Mods.WoS.General.CommonUsedTips.SupportPointsBoost} 1
+			{$Mods.WoS.General.CommonUsedTips.MaxLifeBoost} 10
+			'Gift from Dryad'
+			'''
+	}
+
+	VoidHairpin: {
+		DisplayName: Void hairpin
+		Tooltip:
+			'''
+			'Great for impersonating herrscher!'
+			2% {$Mods.WoS.General.CommonUsedTips.MeleeDamageBoost}
+			2% {$Mods.WoS.General.CommonUsedTips.RangedDamageBoost}
+			'''
+	}
+
+>>>>>>> Stashed changes
 	RemembranceSigil: {
 		DisplayName: Remembrance sigil
 		Tooltip:
@@ -16,6 +188,7 @@ Items: {
 			'''
 	}
 
+<<<<<<< Updated upstream
 	##Accessories Magic
 	TungstenGoblet: {
 		DisplayName: Tungsten goblet
@@ -87,3 +260,1050 @@ Items: {
 }
 
 DamageClasses.AncientClass.DisplayName: Ancient Class
+=======
+	HeartofSin: {
+		DisplayName: Heart of Sin
+		Tooltip:
+			'''
+			"{$Mods.WoS.General.CommonUsedTips.MaxLifeBoost}" 20%
+			Additionally {$Mods.WoS.General.CommonUsedTips.MaxLifeBoost} 50
+			4% "{$Mods.WoS.General.CommonUsedTips.TotalCritBoost}"
+			10% "{$Mods.WoS.General.CommonUsedTips.TotalDamageBoost}"
+			Increases crit damage by 5% for each 100 maximum health above 400 (Maximum: {0})
+			Crit damage bonus: {1}%
+			'''
+	}
+
+	HunterGlove: {
+		Tooltip:
+			'''
+			Leather gloves with a metal plate on the back of the hand. 
+			Protects from stray blows without hindering grip or precision.
+
+			Enables auto-fire for bows
+			Some hunt-themed weapons are empowered
+			4% {$Mods.WoS.General.CommonUsedTips.RangedSpeedBoost}
+			(Additionally increased by 4% when wearing another Hunt-themed accessory)
+			'''
+		DisplayName: Hunter Glove
+	}
+
+	HunterBoots: {
+		Tooltip:
+			'''
+			Sturdy leather boots with iron toe guards. 
+			Each step echoes through the wild — the hunter is never far.
+
+			7% {$Mods.WoS.General.CommonUsedTips.MoveSpeedBoost}
+			(Additionally increased by 4% when wearing another Hunt-themed accessory)
+			'''
+		DisplayName: Hunter Boots
+	}
+
+	RoyalShieldCthulhu: {
+		DisplayName: Royal Shield of Cthulhu
+		Tooltip:
+			'''
+			Slimes become friendly
+			Allows the player to dash into the enemy
+			Double tap a direction
+			'''
+	}
+
+	MonsterSlayerShield: {
+		DisplayName: Shield of Monster Slayer
+		Tooltip:
+			'''
+			Slimes become friendly
+			Allows the player to dash into the enemy
+			Double tap a direction
+			Grants immunity to knockback
+			'''
+	}
+
+	ObsidianMonsterSlayerShield: {
+		DisplayName: Obsidian Shield of Monster Slayer
+		Tooltip:
+			'''
+			Slimes become friendly
+			Allows the player to dash into the enemy
+			Double tap a direction
+			Grants immunity to knockback
+			Grants immunity to fire blocks
+			'''
+	}
+
+	ParasiteHive: {
+		DisplayName: Parasite Hive
+		Tooltip:
+			'''
+			Increases the strength of friendly bees
+			Has a chance to create illusions and dodge an attack
+			Temporarily increase critical chance after dodge
+			May confuse nearby enemies after being struck
+			'''
+	}
+
+	RottenHive: {
+		DisplayName: Rotten Hive
+		Tooltip:
+			'''
+			Increases the strength of friendly bees
+			{$Mods.WoS.General.CommonUsedTips.DamageReductionTaken} 17%
+			'''
+	}
+
+	RingofLivingFlames: {
+		DisplayName: Ring of Living Flames
+		Tooltip:
+			'''
+			Lava Bats, Hell bats and Lava Slimes become friendly
+			Grants immunity to “On Fire!”, “Hellfire”, “Frostburn” and “Chilled” debuffs
+			Reduces damage from touching lava
+			Provides 7 seconds of immunity to lava
+			Grants the Inferno effect while below 25% life
+
+			Burn yesterday to ashes, and rise with flames for Tomorrow
+			'''
+	}
+
+	RingofDivineFlames: {
+		DisplayName: Ring of Divine Flames
+		Tooltip:
+			'''
+			Lava Bats, Hell bats and Lava Slimes become friendly
+			Grants immunity to “On Fire!”, “Hellfire”, “Frostburn”, “Chilled”, “Cursed Inferno” and "Shadow flame" debuffs
+			Reduces damage from touching lava
+			Provides 7 seconds of immunity to lava
+			Grants the Inferno effect while below 35% life
+			While this Inferno effect is active, {$Mods.WoS.General.CommonUsedTips.DamageReductionTaken} 5%
+
+			Ring of Great Flame Gods
+			'''
+	}
+
+	PhoenixShield: {
+		DisplayName: Phoenix Shield
+		Tooltip:
+			'''
+			Grants immunity to most debuffs
+			Slimes, and some hell enemies become friendly
+			Reduces damage from touching lava
+			Provides 14 seconds of immunity to lava
+			Grants the Inferno effect while below 35% life
+			Grants immunity to knockback
+			Grants immunity to fire blocks
+
+			Rise from Flames to burn everything to Ashes! 
+			'''
+	}
+
+	#Tools
+	WeavingofFate: {
+		DisplayName: Weaving of Fate
+		Tooltip:
+			'''
+			"I will write my story with my own hands!"
+
+			• Cancels any currently active world event
+			• Works only if the event has been defeated before
+			'''
+	}
+
+	OldCastle: {
+		DisplayName: Ruins Purifier
+		Tooltip:
+			'''
+			"A relic meant to tame forgotten places"
+
+			• Removes trap blocks from dungeons and dangerous structures
+			• Affects wired traps and hazardous dungeon obstacles
+			'''
+	}
+
+	PureFuries: {
+		DisplayName: Pure Furies
+		Tooltip:
+			'''
+			Unleashes purifying energy around the player
+
+			• Clears Corruption and Crimson blocks in a large area
+			• Affects infected terrain and spreading blocks
+			'''
+	}
+
+	#Weapons
+	Hive: {
+		DisplayName: Hive
+		Tooltip:
+			'''
+			Three round burst
+			5/50/100% chance to save ammo
+			Musket balls turn into a column of bees
+			'''
+	}
+
+	SteelGrave: {
+		DisplayName: Steel grave
+		Tooltip:
+			'''
+			The living tombstone
+			The deadly enemies
+			'''
+	}
+
+	HighTide: {
+		DisplayName: High Tide
+		Tooltip: Feel the flow
+	}
+
+	CosmicJuggernaut: {
+		DisplayName: Cosmic Juggernaut
+		Tooltip:
+			'''
+			Throws up to 5 meteorite fragments
+			Each shard has a 25% chance to replenish mana for the player and allies.
+			Support Points: Increases mana replenishment by 1 unit for each Support Point, and the number of fragments up to 5.
+			'''
+	}
+
+	SpectreKunai: {
+		DisplayName: Spectre kunai
+		Tooltip:
+			'''
+			Throws a few Spectre kunai. 
+			Spectre kunai creates an its own copy on hit
+			'''
+	}
+
+	SparksYoYo: {
+		DisplayName: Sparks
+		Tooltip:
+			'''
+			Deals damage to nearby enemies
+			So don't be afraid
+			Trust your heart, keep your head in the game
+			(Keep up, keep up, and never be afraid)
+			'''
+	}
+
+	Stomach: {
+		DisplayName: Stomach
+		Tooltip: Releases three Hungry who follow the target
+	}
+
+	VileSpreader: {
+		DisplayName: Vile spreader
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up connected blades
+			The blades split into two separate blades after a while
+			Demonite blade: Slightly ignores enemy armor
+			Vile blade: Has chance to inflict shadowflame/poison
+			'''
+	}
+
+	BoneBreaker: {
+		DisplayName: Bone breaker
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up connected blades
+			The blades split into two separate blades after a while
+			Living Bone blade: heals player by 5 on hit
+			Crimtane blade: has increased crit.chance
+			'''
+	}
+
+	MoltenDualBlades: {
+		DisplayName: Molten dual blades
+		Tooltip:
+			'''
+			[Dual-blade]
+			Throws up to three connected blades
+			({$Mods.WoS.General.GlobalTips.RightClick}): Divides the blades into 4 parts
+			'''
+	}
+
+	DuneSerpentFangs: {
+		DisplayName: Dune Serpent's Fangs
+		Tooltip:
+			'''
+			[Dual-blade]
+			({$Mods.WoS.General.GlobalTips.RightClick}): S
+			'''
+	}
+
+	HurricaneofNails: {
+		DisplayName: Hurricane of Nails
+		Tooltip:
+			'''
+			15% chance to save ammo
+			It's time to hammer nails into the coffins of your enemies!
+			Nails pierce the armor of enemies
+			'''
+	}
+
+	DevilFangs: {
+		DisplayName: Devil Fangs
+		Tooltip: Throws several hell knifes at time
+	}
+
+	Embermaw: {
+		DisplayName: Embermaw
+		Tooltip:
+			'''
+			15% chance to save ammo
+			Musket balls turn into a Molten bullets
+			'''
+	}
+
+	WildBeast: {
+		DisplayName: Wild beast
+		Tooltip:
+			'''
+			Hunter's favorite weapon
+			A pleasant-to-use hunting tool
+			Wooden arrows have a higher critical chance, increased damage and velocity
+			'''
+	}
+
+	FrostbrandGrimoire: {
+		DisplayName: Frostbrand Grimoire
+		Tooltip: Summons several magic ice blades that fly towards the point
+	}
+
+	ScorchingFlames: {
+		DisplayName: Scorching Flames
+		Tooltip: Burn them's to ashes!
+	}
+
+	PiercingStar: {
+		DisplayName: Piercing Star
+		Tooltip:
+			'''
+			Forged from fallen starlight — Spear with ability to pierce stars 
+			Its first strike marks the prey — each following thrust grows sharper,  
+			guided by the echo of starlight.
+
+			Gains increased critical chance after the first hit on an enemy
+			'''
+	}
+
+	StarSplittingBow: {
+		DisplayName: Star-Splitting Bow
+		Tooltip:
+			'''
+			Forged from fallen starlight — each string pull hums with celestial energy.  
+			Wooden arrows fired from it turn into Jester’s Arrows,  
+			flying faster and piercing through faint armor.
+
+			Wooden arrows become Jester’s Arrows  
+			Arrows fly faster  
+			Ignores 5 points of enemy defense
+			'''
+	}
+
+	HuntingKnife: {
+		Tooltip:
+			'''
+			A balanced throwing knife, made for silent hunts. 
+			Flies straight and steady in the hands of a skilled hunter.
+			'''
+		DisplayName: Hunting Knife
+	}
+
+	StaffofConstellations: {
+		DisplayName: Staff of Constellations
+		Tooltip:
+			'''
+			Causes Asteroids to fall from the sky, which explode on impact
+
+			Showers Asteroids
+			I'll show you all the beauty...
+			...STARS THAT WILL BURN YOU DOWN!
+			'''
+	}
+
+	NewProtocol: {
+		DisplayName: New Protocol
+		Tooltip:
+			'''
+			Fires up to 4 lasers at nearby enemies
+			Update the Protocol to rewrite "fate"
+			'''
+	}
+
+	CriticalException: {
+		DisplayName: Critical Exception
+		Tooltip:
+			'''
+			Fires up to 5 rockets at nearby enemies.
+			ERROR: NOTFOUND_CRITICAL_EXCEPTION_281125CODE
+			'''
+	}
+
+	DirectiveCall: {
+		DisplayName: Directive Call
+		Tooltip:
+			'''
+			Summons a Directive Call Drone that marks the enemy
+			with the highest maximum health.
+			Can mark enemies only 4 times.
+			'''
+	}
+
+	SilverFalcon: {
+		DisplayName: Silver Falcon
+		Tooltip:
+			'''
+			Rapidly fires bursts of three lasers.
+			Every second use launches a Silver Falcon Drone,
+				that homes in on the enemy with the highest maximum health.
+			'''
+	}
+
+	SilverSerpent: {
+		DisplayName: Silver Serpent
+		Tooltip: ""
+	}
+
+	VoodooStaff: {
+		DisplayName: Voodoo Staff
+		Tooltip:
+			'''
+			Unleashes cursed voodoo energy to your enemies
+
+			Enemies suffering from damage-over-time effects
+			are struck again for each such debuff up to 4 times
+
+			Enemies weakened by curses take increased damage
+			+25% damage per weakness effect up to 100%
+			'''
+	}
+
+	Snowfall: {
+		DisplayName: Snowfall
+		Tooltip:
+			'''
+			Releases a flurry of snowflakes in a wide arc
+			Have you built a snowman yet?
+			'''
+	}
+
+	CoralStaff: {
+		DisplayName: Coral Staff
+		Tooltip: Releases a small handful of coral marbles
+	}
+
+	SkyBoundGrimoire: {
+		DisplayName: Sky Bound Grimoire
+		Tooltip:
+			'''
+			Releases feathers filled with unusual power
+			({$Mods.WoS.General.GlobalTips.RightClick}): Enter Burst mode: Sky Bless
+			{WIP}
+			'''
+	}
+
+	BreakpointRocket: {
+		DisplayName: Breakpoint Rocket
+		Tooltip: ""
+	}
+
+	WishDragon: {
+		Tooltip: ""
+		DisplayName: Wish Dragon
+	}
+
+	#Consumables
+	GrowthKey: {
+		DisplayName: Growth key
+		Tooltip: "'Charged with the essence of many souls'"
+	}
+
+	MoltenKnife: {
+		DisplayName: Molten knife
+		Tooltip: Ignites enemies on hit
+	}
+
+	BoneKnife: {
+		DisplayName: Bone knife
+		Tooltip:
+			'''
+			Ooops! 
+			Splits into three fragments after a while
+			'''
+	}
+
+	StrangeSnowball: {
+		DisplayName: Strange Snowball
+		Tooltip: Summons a snowman for fight!
+	}
+
+	GraniteElementalStaff: {
+		DisplayName: Granite Elemental Staff
+		Tooltip: Summons a little granite elemental for fight!
+	}
+
+	#Placeable
+	BigMimicBloomingBanner: {
+		DisplayName: Blooming mimic banner
+		Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.WoS.NPCs.BigMimicBlooming.DisplayName}"
+	}
+
+	CelestialAltar: {
+		DisplayName: Celestial Altar
+		Tooltip:
+			'''
+			Filled with magical and holy power
+			It combines an Anvil, a Crystal Ball, a Demonic Altar and a Workbench.
+			'''
+	}
+
+	TwilightPhantom: {
+		DisplayName: Twilight Phantom
+		Tooltip: ""
+	}
+
+	TestAccessory: {
+		Tooltip: ""
+		DisplayName: Test Accessory
+	}
+}
+
+NPCs: {
+	BigMimicBlooming.DisplayName: Blooming mimic
+
+	Chat: {
+		Guide: {
+			DayTime: Very good day today!
+			NightTime: Be careful at night!
+			AEDWeapons: "{$Mods.WoS.General.GlobalTips.AEDItemsTip}"
+		}
+	}
+
+	Bestiary.BigMimicBlooming: The mimics are overflowing with vitality, which makes them stronger. They became one with the force of nature. They can be birthed from ordinary chests by force.
+
+	HunterTrader: {
+		DisplayName: Hunter
+
+		TownNPCMood: {
+			Content: I'm fine, thanks.
+			NoHome: I'm used to spending time outside, don't worry.
+			FarFromHome: Ouch... Am I... lost?
+			LoveSpace: More space around - more viewing angle! Practical.
+			DislikeCrowded: I don't hear any animal sounds because of this noise of people...
+			HateCrowded: There are too many people... Really. Are they rabbits?...
+			LoveBiome: A {BiomeName}? That's good place for hunt!
+			DislikeBiome: I really dont like hunt at {BiomeName}.
+			LoveNPC: A {NPCName}? I think that she really cute!
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I don't like {NPCName}. He scares all animals around!
+			LikeNPC_Princess: I recognize {NPCName} power, and I'm surprised at how easily she finds common ground even with birds...
+			Princess_LovesNPC: A {NPCName}? This hunter? He's incredible at what he does!
+		}
+
+		Bestiary: {
+			First: A cheerful and friendly hunter, always ready to share his knowledge and gear. For the right price, he can help you claim even the toughest prey.
+			Second: Sells a variety of ammunition, hunting gear, and some of his hard-earned spoils.
+		}
+
+		Shop: {
+			ShopBasic: Hunter's shop
+			ShopAdditional: Ammunition's shop
+		}
+
+		Names: {
+			Tourin: Tourin
+			Thorne: Thorne
+			Edward: Edward
+			Yanokage: Yanokage
+			Rowan: Rowan
+			Eldric: Eldric
+			Kazuki: Kazuki
+			Steve: Steve
+			Johnny: Johnny
+			Peter: Peter
+			Jack: Jack
+			Hue: Hue
+			Jullian: Jullian
+			Gerald: Gerald
+			Astel: Astel
+			Kalpas: Kalpas
+			Dante: Dante
+			QrowBranwen: Qrow B.
+			Hugo: Hugo
+			Lycaon: Lycaon
+			Yaoshi: Yaoshi
+			Blade: Blade
+			Lan: Lan
+		}
+
+		Chat: {
+			AboutDungeon: "{$TownNPCMoodBiomes.Dungeon}?... The place where the old man used to roam? You'd better stay out of there. I tried to get in once, and....That look from the depths is still in my memory.."
+			AboutHunt: Silence during hunting is one of the crucial factors for success. If you make any noise, the beast will notice you. Or a Monster, depending on who you're hunting..
+			AboutBows: The main advantage of a bow is that it is quieter than a firearm. But learning how to shoot it is more difficult than it seems.
+			AboutGuns: When it comes to monsters, there's no point worrying about "Ethics" and "hunter honor." If you have a gun, use it.
+			AboutTraps: Traps are useful, but don't forget where you set them.
+			AboutWeather: In rainy weather, animals prefer to sleep, and monsters prefer to act. Knowing the habits of different creatures makes hunting them easier.
+			AboutFood: Before traveling anywhere, not just hunting, it is important to stock up on food properly. You don't want to run away from monsters hungry, do you?
+			AboutLoot: Prey from animals is now valued worse than from monsters. And sometimes it even turns out that after hunting, there is no prey at all. But the world has become safer.
+			AboutHunterHonor: Hunting is a competition when it comes to animals. There is no pleasure in secretly killing any animal. But if he has a chance to kill you, and you win in a difficult battle, it brings pleasure.
+			AboutBeasts: Do not get carried away with the extermination of animals. If you get rid of some, you'll have problems with others... If you need to survive, take as much as you need, no more.
+			AboutNight: At night, the most vile of all monsters awaken...
+			WeatherRaining: Rain is a very pleasant time, especially if there are no monsters nearby. You can just sit at home and drink hot tea with lemon and honey...
+			WeatherSlimes: It seems to me or... not... That's for sure... A rain of slimes?... What's happening?
+			AboutSlimes: Slimes are the simplest of monsters. If you understand how they act in battle, then defeating them is only a matter of time.
+			AboutZombies: Zombies? They look like people, or rather their corpses..But considering how many Zombies I sometimes see, I'd like to ask... But were they really people before?
+			AboutEyes: Have you seen those creepy eyes in the sky? I wonder if they are related to that legend?...
+			AboutEyeofCthulhu: Interestingly, they turned out to be associated with this very legend. What legend? Haven't you heard? They say that once upon a time one deity was divided into parts, and now his eyes, brain and even heart are scattered all over the world...
+			AboutSkeletons: Skeletons don't have muscles, but they move...They don't have brains, but they don't act like zombies or slugs... I'm sorry, but I'm bad at magic, and I can't figure out how to neutralize them, excluding the option of shredding...
+			AboutHornets: Are the hornets from the jungle giving you problems? Take a ranged weapon and keep a close eye on the surrounding field. Although their stingers fly fast, it is quite possible to dodge them.
+			AboutBloodmoon: When the moon turns purple, the monsters become even more bloodthirsty... If you're not sure you can handle them, close the doors and seal them somehow.
+
+			ArmsDealer: {
+				AboutWeapons: "{0}? we have different choices in terms of weapons, but that doesn't stop us from communicating and getting along. After all, does it really matter which weapon you use to catch your prey?"
+				AboutHunt: "{0} says I should use firearms more often for hunting... Well. It's a good solution for monsters, of course, but loud gunshots can scare animals, so I prefer to continue using a bow."
+				AboutGuns: "{0} is very well versed in firearms. If I decide to go monster hunting again, I'll definitely run to him for more ammo or weapons."
+				AboutNurse: Are {0} and {1} dating? Suddenly... Do you think they'll be okay?
+				AboutAmmunition: Just as bows need arrows, so do firearms need bullets... I am glad that I can buy them from {0}. Oh, {0} should have sold arrows too..
+				AboutDryad: "{0} once asked me how the {1} felt about the fact that he hunted various animals and monsters... Let's just say she's not too happy with some of his loot."
+			}
+
+			Zoolist: {
+				AboutAnimals: Am I having problems with {0} because of my hunting? Do you think she'll mind? Don't worry, we've already discussed this, and she doesn't mind.
+				AboutZoologist: I find {0} very cute. But I didn't tell you that. Besides, I can always contact her to find out something about the animals I'm going to hunt.
+				AboutZoologistBrother: I know that {0} and {1} are siblings... But still, it's hard to believe. They look too different! And it's not about {0} 's ears and tail at all!
+				AboutBloodmoon: It's better not to wonder where {0} disappears during the blood moon. If you try, you'll find out how arrows and bullets feel in all parts of the body.
+				AboutSympathy: Do you think I have a chance with {0}? Learning to shoot arrows and firearms was easier than asking her out on a date...
+				AboutForest: "{0} is incredibly well-versed in the forest! In this respect, we are similar to her. If you need help finding something, tell us, we will help!"
+				AboutCurse: I know about the curse on {0}. She worries too much that her new appearance makes her look ugly.. But for me, she will be beautiful anyway, with or without ears.
+				AboutTail: Of course, I'm used to strange things in my travels, but {0} tail and ears still amaze me. And... interest. Don't stare like that, it's none of your business!
+				AboutTimeTogether: Sometimes {0} and I track rare creatures together. I take the bow, she takes her notebook and her enthusiasm. It's funny, isn't it? But it works.
+				LearningNew: It's amazing how much {0} knows about animals. Sometimes I find myself listening to her stories, forgetting that I was going hunting. Maybe I can learn something from her?
+			}
+
+			Clothier: {
+				AboutClothes: "{0} A master of his craft. Considering the past he told me about, it doesn't even come as a surprise.. After all, you have to have at least one hobby while being imprisoned alone.."
+				AboutDungeon: What an amazing and terrifying story is connected with that dungeon... I hope {0} will have a peaceful and pleasant life now.
+				AboutMaterials: I sometimes supply {0} different small bugs. It turns out that they are used to produce dyes! Isn't it amazing?
+				AboutMonsters: After you removed the curse from {0}, I can now enter the depths of the dungeon. It's not like I expected to see any animals there... But learning how to shoot skeletons is a lot of fun!
+				AboutBloodmoon: "{0} Calls this a problem? Ha! It's just an opportunity to earn some money and kill monsters! Stay at home if you're not sure you can handle it, and lock the doors, my advice to you."
+				AboutPartyClothes: Outfits that {0} sells during the party... Very unusual.
+			}
+
+			Mechanic: {
+				AboutDungeon: I'm really curious, how did it turn out that {0} was locked in a dungeon?..  No, I'm more interested in how she SURVIVED there.
+				AboutFear: "{0} says she's not afraid of any monsters. And you try not to be afraid when a trap with a flamethrower or darts activates under your feet."
+				AboutMedicalTroubles: The girl who fixes the wires? A dangerous girl. I saw her set up a trap right in the medical unit. Simply... just in case.
+				AboutExplodedWorkshop: Did you know that {0} once blew up the entire underground workshop just to test a new timer? Says — 'everything went according to plan'
+				AboutTraps: I like {0} inventions. Especially those that leave only dust from the monster... It's a pity that sometimes they work for their own people.
+				AboutNoises: If you hear a click behind you, it's either a trap, or {0} 'improves' your home again.
+				AboutTools: We argued with {0} about which was more effective—a shotgun or an electric trap. Spoiler alert: I don't have a gun anymore.
+				AboutToolbox: Don't believe {0} innocent smile. There is at least one hidden mine in each of these toolboxes.
+				AboutBombs: The mechanic is a genius, I do not argue. Just don't let her figure out anything about explosives. It was enough once.
+				AboutGoblinTinkerer: At first I thought that {0} and {1} just work together.… And then I saw them arguing about the scheme of some kind of mechanism. Now I'm not sure if they're colleagues or if this is their way of flirting.
+				AboutPrivateTime: I wonder if {0} and {1} really spend all their time fixing machinery? Or are they just pretending to be busy so that no one interferes with the two of them?
+			}
+
+			GoblinTinkerer: {
+				AboutTraps: "{0} showed me some traps that he had constructed. Smart, practical, and... cruel. I even took one of them into the woods — it worked perfectly. I think we have a lot to learn from each other."
+				AboutNoise: I don't know how he manages to make such loud noises with the help of small mechanisms... Seriously, I once thought that a goblin raid had started — and it was just {0} trying to fix the toaster.
+				AboutFriendship: At first, I didn't trust {0}. After all, goblins and humans don't really get along. But now... He proves that even a former enemy can become an ally. Sometimes even a useful ally.
+				AboutInventions: One day I asked {0} to make me an automatic crossbow. He did it. Crossbow accidently shot me in the leg. I'm not asking him for anything else.
+				AboutGadgets: Have you seen what kind of things {0} makes? He gave me a trap once... It worked so well that the monster didn't even have time to make a sound. It's a pity that she exploded right after that.
+				AboutRepair: "{0} can fix almost anything, from a broken firearm to an old bow. Sometimes it seems to me that he understands mechanisms better than people.… Maybe it is, though."
+				AboutTracking: I asked {0} if there was any way to track the animals from a distance. He gave me something... It's weird. Now this 'sensor' emits an alarming beep every time I approach my cat.
+			}
+
+			Demolitionist: {
+				AboutBlastFishing: .. I don't think this is normal. {0} explosions can stun fish a mile away! It's too much!
+				AboutNoises: Every time I'm about to shoot an arrow at an unsuspecting beast... The noise of explosions can be heard and scares all the animals around!
+				AboutBombs: Bombs? Grenades? No. I won't be able to use them for hunting. To begin with, there will be absolutely nothing left of the loot from the explosion!
+				AboutExplosions: I'm not arguing, explosions look epic and beautiful sometimes. But that doesn't mean that someone needs to do them every 5 minutes!
+				AboutAngler: This poor boy {1} couldn't sleep all night yesterday because of the explosions {0}! Do you have any idea how hard it was for me to help this kid finally fall asleep??
+				AboutNight: Why do I live so close to a maniac who doesn't know what silence is?! I hate living next to {0}
+			}
+
+			Angler: {
+				AboutAngler: I know {0} only for a week and half, but if anything happened to him, i would shoot everyone in this room and then myself.
+				AboutFish: I do not know why {0} likes fish and cucumbers so much, but if it makes him happy, why not go fishing?
+				AboutSeaCreatures: I don't hunt small fish unless they cause problems for people. My prey are creatures from the depths of the waters. Surprisingly, {0} is not scared when I pull dead creatures out of the water...
+				AboutOcean: "{0} He said that being near the ocean is very pleasant.. I must agree. This breeze and sand allow you to have a good rest!"
+				AboutFishing: Sometimes it's still nice to just sit in silence and go fishing.... It's not related to my job, but do I have to do nothing but hunt big animals?
+			}
+
+			WitchDoctor: {
+				AboutWildBeasts: Jungles can surprise... Have you seen these huge hornets? Or live plants? What the {0} knows about them is worth its weight in gold.
+				AboutPoisons: It is extremely easy to get hurt in the jungle, and most often these wounds will be with poison.. If it wasn't for {0} antidotes, I would have definitely died... A hundred times.
+				AboutJungles: If you need to get somewhere in jungles... Go to the {0} and ask him for the antidote. Preferably for every type of poison.
+			}
+
+			DyeTrader: {
+				AboutDyes: Sometimes, while hunting or just walking, I see unusual plants. As it turned out, many of them are used to create dyes. If you see any, ask {0} how to make dyes from them!
+				FutureLine: "4"
+			}
+		}
+
+		Census.SpawnCondition: No conditions for spawn
+	}
+}
+
+Prefixes: {
+	Weapon: {
+		Support: {
+			SacredHelp.DisplayName: Sacred Help
+			Inspired.DisplayName: Inspired
+		}
+	}
+
+	Accessories: {
+		Support: {
+			Supportive.DisplayName: Supportive
+			Encouraging.DisplayName: Encouraging
+			Beneficial.DisplayName: Beneficial
+			Aiding.DisplayName: Aiding
+		}
+	}
+}
+
+Projectiles: {
+	#Ammo
+	MoltenBulletS.DisplayName: "{$Mods.WoS.Items.MoltenBullet.DisplayName}"
+	FrostBulletS.DisplayName: "{$Mods.WoS.Items.FrostBullet.DisplayName}"
+	HiveBulletS.DisplayName: "{$Mods.WoS.Items.HiveBullet.DisplayName}"
+	SparksYoYoThrow.DisplayName: "{$Mods.WoS.Items.SparksYoYo.DisplayName}"
+	MoltenKnifeThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	HellflamesThrow.DisplayName: "{$Mods.WoS.Items.MoltenKnife.DisplayName}"
+	HighTideSlash.DisplayName: "{$Mods.WoS.Items.HighTide.DisplayName}"
+	DuneSerpentFangsThrow.DisplayName: "{$Mods.WoS.Items.DuneSerpentFangs.DisplayName}"
+	DuneSerpentFangsThrowSingle.DisplayName: "{$Mods.WoS.Items.DuneSerpentFangs.DisplayName}"
+	VolcanoMoltenFury.DisplayName: Volcano molten fury
+	PhoenixShot.DisplayName: Phoenix flame
+	DevilFangsThrow.DisplayName: Devil fangs
+	PhoenixBlasterShot.DisplayName: Phoenix energy
+	StomachShot.DisplayName: Hungry
+	SpectreKunaiThrow.DisplayName: Spectre kunai
+	MoltenDualBladesThrow.DisplayName: Molten dual blades
+	DemoniteBlade.DisplayName: Demonite blade
+	VileBlade.DisplayName: Vile blade
+	BoneBreakerThrow.DisplayName: Bone blade
+	LivingBoneBlade.DisplayName: Living bone blade
+	VileSpreaderThrow.DisplayName: Vile spreader
+	CrimtaneBlade.DisplayName: Crimtane blade
+	MoltenBlade.DisplayName: Molten blade
+	ObsidianBlade.DisplayName: Obsidian blade
+	FrostbrandGrimoireBlade.DisplayName: Frostbrand magic blade
+	BoneKnifeThrow.DisplayName: Bone knife
+	BoneKnifeShard.DisplayName: Bone shard
+	SmallEmbers.DisplayName: Small embers
+	IceSickleDeepCold.DisplayName: Ice sickle: Deep cold
+	SteelGraveShot.DisplayName: Steel Grave
+	PiercingStarSpear.DisplayName: Piercing Star
+	HuntingKnifeThrow.DisplayName: Hunting Knife
+	ConstellationsStars.DisplayName: Constellations Stars
+	AsteroidsExplosion.DisplayName: Asteroids Explosion
+	Asteroids.DisplayName: Asteroids
+	NewProtocolThrow.DisplayName: New Protocol
+	RedLaser.DisplayName: Red Laser
+	CriticalExceptionSwing.DisplayName: Critical Exception
+	Explosion.DisplayName: Explosion
+	BreakpointRocketShot.DisplayName: Breakpoint Rocket
+	DirectiveDrone.DisplayName: Directive Drone
+	SilverFalconShot.DisplayName: Silver Falcon Drone
+	StaffofBlizzardShot.DisplayName: Staffof Blizzard Shot
+	WishDragonWhip.DisplayName: Wish Dragon Whip
+	PureFuriesWave.DisplayName: Pure Furies Wave
+	CelestialBlade.DisplayName: Celestial Blade
+	PhoenixBullet.DisplayName: Phoenix Bullet
+	IceCrystals.DisplayName: Ice Crystals
+	CosmicJuggernautShards.DisplayName: Cosmic Juggernaut Shards
+	VoodooEnergy.DisplayName: Voodoo Energy
+	SnowfallSnowflakes.DisplayName: Snowfall
+	CoralFragments.DisplayName: Coral Marbles
+	SnowmanMinion.DisplayName: Snowman
+	StrangeSnowballThrow.DisplayName: Strange Snowball
+	LittleGraniteElemental.DisplayName: Little Granite Elemental
+	SkyBoundFeathers.DisplayName: Sky Bound Feathers
+	TwilightEdictSwing.DisplayName: Twilight Edict Swing
+	TwilightPhantomBlade.DisplayName: Twilight Phantom Blade
+}
+
+Configs: {
+	MainConfig: {
+		DisplayName: "[WoS] Content Config"
+
+		Headers: {
+			Weapons: Weapons
+			QoL: QoL
+			QoL_ModCompatibility: QoL (Mod Compatibility)
+		}
+
+		SkyFractureCelestialBlessing: {
+			Label: "[i:3787] Sky Fracture: Celestial Blades"
+			Tooltip:
+				'''
+				Sky Fracture has a 25% chance, or always on critical hits, to spawn a Celestial Blade.
+				 
+				Each active Celestial Blade increases:
+				• Magic damage by 2%
+				• Sky Fracture damage by 4%
+
+				{$Controls.RightClick}
+				Recall all Celestial Blades to the cursor position.
+				Enter Burst mode: Sky Bless
+
+				If this config is disabled:
+				The effect becomes available after defeating Golem.
+				'''
+		}
+
+		ExplosivesAutouse: {
+			Label: "[i:168] Explosives: Auto-use"
+			Tooltip: If enabled, it allows to use an auto-throw for Explosives.
+		}
+
+		ExplosivesThrowSpeed: {
+			Label: "[i:168] Explosives: Throwing speed"
+			Tooltip: Changes the throwing speed of explosives. Default: 25
+		}
+
+		ThrowingWeaponsAutouse: {
+			Label: "[i:279] Throwing weapons: Auto-use"
+			Tooltip: If enabled, it allows to use an auto-throw for some throwing weapons.
+		}
+
+		ThrowingWeaponsSpeed: {
+			Label: "[i:279] Throwing Weapons Speed"
+			Tooltip: Changes the throwing speed of some throwing weapons. Default: 15
+		}
+
+		IceSickleDeepCold: {
+			Label: "[i:1306] Ice Sickle: Deep Cold"
+			Tooltip:
+				'''
+				Ice Sickle spins continuously while held.
+
+				While spinning:
+				• Periodically fires Ice Slashes in random directions
+				• Ice Slashes have a chance to call down Ice Shards from the sky on hit
+				• Ice Shards deal additional damage
+
+				If this config is disabled:
+				The effect becomes available after entering Hardmode.
+				'''
+		}
+
+		MeteorStaffNoCeiling: {
+			Label: "[i:2750] Meteor Staff: No Ceiling"
+			Tooltip: Meteors ignore blocks while falling above or at the player's height
+		}
+
+		StarfuryNoCeiling: {
+			Label: "[i:65] Starfury: No Ceiling"
+			Tooltip: Falling stars ignore blocks while falling above or at the player's height
+		}
+
+		BlizzardStaffNoCeiling: {
+			Label: "[i:1931] Blizzard Staff: No Ceiling"
+			Tooltip: Icicles ignore blocks while falling above or at the player's height
+		}
+
+		ToxicFlaskPoisonousBreath: {
+			Label: "[i:3105] Toxic Flask: Poisonous Breath"
+			Tooltip:
+				'''
+				Poisonous clouds gain enhanced properties:
+
+				• Inflict a random damage-over-time debuff on enemies
+				• Lifetime slightly increased
+				• Can hit enemies 4 additional times
+				• Cloud size increased by 50%
+				'''
+		}
+
+		VampireKnivesBloodlust: {
+			Label: "[i:1569] Vampire Knives: Bloodlust"
+			Tooltip:
+				'''
+				Vampire Knives gain bloodlusting properties:
+
+				• Inflict the Bloodlust debuff on enemies
+				• Striking Bloodlusted enemies slightly heals the player
+				• Increases Vampire Knives critical strike chance by 8%
+				'''
+		}
+
+		##MISC Config
+		ConsumabledBossItems: {
+			Label: "[i:560] Boss items: Consumabled"
+			Tooltip:
+				'''
+				Boss summoning items are no longer consumable. 
+				Their price and crafting has been changed.
+				'''
+		}
+
+		ClentaminatorSpeedBoost: {
+			Label: "[i:779] Clentaminator: Speed boost"
+			Tooltip:
+				'''
+				Increases the range of the Clentaminator
+				Solutions are consumed faster and cost more
+				'''
+		}
+
+		TownNPCsInvincible: {
+			Label: Town NPCs: Invincible
+			Tooltip: Town NPCs don't take Damage
+		}
+
+		TownNPCsSpecialShop: {
+			Label: Town NPCs: Special shop
+			Tooltip: Adds special items (including those dropped from Town NPCs) to the shop
+		}
+
+		ConsumabledBossItemsGensokyo: {
+			Tooltip:
+				'''
+				[c/EE0000:"Gensokyo Mod"]
+				Boss summoning items are no longer consumable. 
+				Their price and crafting has been changed.
+				'''
+			Label: "[i:560] Gensokyo boss summon: Consumabled"
+		}
+
+		ConsumabledBossItemsThorium: {
+			Tooltip:
+				'''
+				[c/00FFFF:"Thorium Mod"]
+				Boss summoning items are no longer consumable. 
+				Their price and crafting has been changed.
+				'''
+			Label: "[i:560] Thorium boss summon: Consumabled"
+		}
+	}
+
+	ModContentConfig: {
+		DisplayName: "[WoS] Mod Content Config"
+		Headers.NPCs: NPCs
+
+		HunterAlwaysSellsMaterials: {
+			Label: Hunter: Always sells resources
+			Tooltip: It affects whether the Hunter will trade materials from the hunt depending on the Zone or not
+		}
+	}
+}
+
+General: {
+	GlobalTips: {
+		RightClick: "{$Controls.RightClick}"
+		ProgressBar: Progress:
+		AEDItemsTip: Some weapons create the feeling that they are not showing their full potential...
+		AEDITemsTip0: Some weapons are not ready to show their full potential yet...
+		AEDPhoenixBlaster: The {$ItemName.PhoenixBlaster} has an unusual aura that attracts your curiosity.
+		TODO: TO-DO in future(Maybe)
+		CritStrike: Critical damage
+		Tooltip.AEDWeapon: "[c/FF0000:|Awakened Exalted Destiny|]"
+	}
+
+	CommonUsedTips: {
+		TotalDamageBoost: increased damage
+		MeleeDamageBoost: increased melee damage
+		RangedDamageBoost: increased ranged damage
+		MagicDamageBoost: increased magic damage
+		SummonDamageBoost: increased summon damage
+		TotalSpeedBoost: increased attack speed
+		MeleeSpeedBoost: increased melee speed
+		RangedSpeedBoost: increased ranged speed
+		MagicSpeedBoost: increased magic speed
+		TotalCritBoost: increased critical strike chance
+		MeleeCritBoost: increased melee critical strike chance
+		RangedCritBoost: increased ranged critical strike chance
+		MagicCritBoost: increased magic critical strike chance
+		SummonWhipRangeBoost: Increases whip range by
+		SummonMaxMinions: Increases your max number of minions by
+		MaxLifeBoost: Increases maximum life by
+		MoveSpeedBoost: increased movement speed
+		DamageReductionTaken: Reduces damage taken by
+		SupportPointsBoost: Increases Support Points by
+		SupportDamageBoost: increased support damage
+		SupportMeleeDamageBoost: increased support melee damage
+		SupportRangedDamageBoost: increased support ranged damage
+		SupportMagicDamageBoost: increased support magic damage
+		SupportSummonDamageBoost: increased support summon damage
+		SupportAttackSpeedBoost: increased support attack speed
+		SupportMeleeSpeedBoost: increased support melee speed
+		SupportRangedSpeedBoost: increased support ranged speed
+		SupportMagicSpeedBoost: increased support magic speed
+	}
+
+	WeaponTips: {
+		TrueNightsEdge: Inflicts Cursed Inferno on hit
+		TrueExcalibur:
+			'''
+			Inflicts Divine Intervention on hit
+			Divine Intervention reduces defense by 10% and contact deal damage by 25% for enemies
+			'''
+		TerraBlade:
+			'''
+			Strikes enemies with overwhelming power, inflicting
+			Divine Intervention, Cursed Inferno,
+			and a random damage-over-time debuff on hit
+			'''
+		BlizzardStaff: "{$Mods.WoS.Configs.MainConfig.BlizzardStaffNoCeiling.Tooltip}"
+		MeteorStaff: "{$Mods.WoS.Configs.MainConfig.MeteorStaffNoCeiling.Tooltip}"
+		StarfuryNoCeiling: "{$Mods.WoS.Configs.MainConfig.StarfuryNoCeiling.Tooltip}"
+		ToxicFlask: Inflict a random damage-over-time debuff on enemies
+		VampireKnives:
+			'''
+			Vampire Knives inflict the Bloodlust debuff on enemies
+			Hitting enemies with Bloodlust slightly heals the player
+			'''
+		IceSickle_DeepCold: Quickly spins the sickle, releasing slashes in random directions.
+		IceSickle_DeepCold_IceStorm:
+			'''
+			Quickly spins the sickle, releasing slashes in random directions.
+			Slashes have a chance to call down falling icicles on hit, dealing extra damage.
+			'''
+		IceSickle_DeepCold_NotAwaked: The true power of this weapon is sealed by the ancient forces of Light and Darkness...
+		SkyFracture_CelestialBlades:
+			'''
+			Has a 25% chance, or always on critical hits, to spawn a Celestial Blade.
+			Each active Celestial Blade increases magic damage and Sky Fracture's damage.
+			Right click: Recalls all Celestial Blades to the cursor and grants a magic damage buff.
+			'''
+		SkyFracture_CelestialBlades_NotAwaked: The true power of this weapon is sealed by mysterious forces in an ancient Idol.
+		EnchantedSword:
+			'''
+			'Master the Mana in your body'
+			With a chance of {0}%, can shoot an additional enchanted sword.
+			'''
+	}
+
+	BattleTips: {
+		SteamHit: Steam!
+		Shock: Shock!
+		ShockHit: Shocked!
+	}
+
+	Recipes: {
+		ConditionBossEOC: Defeated Eye of Cthulhu
+		ConditionBossWEB: Defeated World Evil Boss
+		ConditionBossSK: Defeated Slime King
+		ConditionBossGolem: Defeated Golem
+		RecipeGroupStaffs: Any Staff (Pre-Hardmode)
+	}
+
+	Shops: {
+		HasStynger: Player Have Any Stynger Gun
+		HasJackOLanternLauncher: Player Have Any Jack-O-Lantern Launcher
+		HasCandyCornRifle: Player Have Any Candy Corn Gun
+		HasStakeLauncher: Player Have Any Stake Launcher
+		HasNailWeapon: Player Have Any Nail Gun
+		HasTwoOrMoreHunterSetPieces: Mods.WoS.General.Shops.HasTwoOrMoreHunterSetPieces
+	}
+}
+>>>>>>> Stashed changes
